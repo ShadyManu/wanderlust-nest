@@ -1,9 +1,9 @@
 workflows:
   ionic-capacitor-ios-app:
-    name: Ionic App
+    name: App
     environment:
       vars:
-        XCODE_WORKSPACE: "ios/App/App.xcworkspace"
+        XCODE_WORKSPACE: "App.xcworkspace"
         XCODE_SCHEME: "App"
       node: latest
     scripts:
