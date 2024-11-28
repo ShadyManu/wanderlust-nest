@@ -8,6 +8,7 @@ workflows:
       node: latest
     scripts:
       - npm install
+      - ionic build
       - npx cap sync
       - |
           # build iOS
