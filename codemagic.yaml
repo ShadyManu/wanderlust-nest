@@ -3,16 +3,17 @@ workflows:
     name: Ionic App
     environment:
       vars:
-        XCODE_WORKSPACE: "ios/App/MyApp.xcworkspace"
-        XCODE_SCHEME: "MyApp"
+        XCODE_WORKSPACE: "ios/App/App.xcworkspace"
+        XCODE_SCHEME: "App"
       node: latest
     scripts:
       - npm install
       - ionic build
       - npx cap sync
+      - npx cap sync ios
       - |
           # build iOS
-          cd platforms/ios
+          cd ios/App
           pod install
           xcodebuild build -workspace "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     artifacts:
