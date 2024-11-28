@@ -1,0 +1,78 @@
+<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
+  <app-header />
+  <div class="gap-8 flex flex-col">
+    <!-- SEARCHBAR -->
+    <div class="pb-0">
+      <ion-searchbar
+        [debounce]="300"
+        (ionInput)="onSearch($event)"
+        class="pb-0"
+      ></ion-searchbar>
+    </div>
+
+    <!-- SLIDER -->
+    <div
+      class="flex flex-col flex-wrap overflow-x-scroll no-scrollbar h-[120px] px-4 py-0"
+    >
+      @for (country of filteredCountries(); track country) {
+      <div (click)="onCurrencyClick(country)">
+        <ion-button
+          [color]="country.key === selectedFirstCountry()?.key || country.key === selectedSecondCountry()?.key ? 'success' : 'light'"
+          class="w-[80px]"
+          >{{country.key}}</ion-button
+        >
+      </div>
+      }
+    </div>
+
+    <!-- ___ -> ___ -->
+    <div class="flex flex-col items-center justify-center">
+      <ion-text class="text-center">
+        <h1 class="text-4xl font-bold flex justify-center h-[40px]">
+          {{selectedFirstCountry()?.key ?? ""}} @if(selectedFirstCountry()?.key
+          !== null || selectedSecondCountry()?.key !== null) {
+          <ion-icon [name]="'arrow-forward-outline'" />
+          } {{selectedSecondCountry()?.key ?? ""}}
+        </h1>
+      </ion-text>
+    </div>
+
+    <!-- AMOUNT INPUT -->
+    <div class="px-4">
+      <h1 class="text-lg">Enter amount</h1>
+      <ion-item class="p-0">
+        <ion-input
+          aria-label="Number input"
+          type="number"
+          inputmode="decimal"
+          [debounce]="500"
+          (ionInput)="onInput($event)"
+          [value]="firstCountryAmount()"
+        ></ion-input>
+      </ion-item>
+    </div>
+
+    <!-- CONVERTED AMOUNT -->
+    <div class="px-4">
+      <h1 class="text-2xl">Converted amount</h1>
+      <ion-item class="p-0">
+        <ion-input
+          aria-label="Converted amount"
+          [disabled]="true"
+          [value]="conversionResult() ? conversionResult() + ' ' + selectedSecondCountry()!.symbol : null"
+        ></ion-input>
+      </ion-item>
+    </div>
+
+    <!-- CONVERSION RATE -->
+    <div class="px-4">
+      <h1 class="text-2xl">Conversion rate</h1>
+      @if (currencyRate() !== null) {
+      <h1 class="text-lg">
+        {{ '\u200E1 ' + selectedFirstCountry()!.key }} = {{ currencyRate() + ' '
+        + selectedSecondCountry()!.key }}
+      </h1>
+      }
+    </div>
+  </div>
+</ion-content>

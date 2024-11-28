@@ -1,0 +1,30 @@
+.ql-formats > span > button {
+  svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+/* Selezionare solo gli SVG all'interno dei pulsanti con classi ql-bold, ql-italic, ql-underline, ql-strike */
+/* Seleziona l'SVG all'interno dei pulsanti della toolbar */
+.ql-toolbar > span.ql-formats > button > svg {
+  width: 124px;  /* Aumenta la larghezza */
+  height: 124px; /* Aumenta l'altezza */
+}
+
+
+.ql-snow.ql-toolbar button svg, .ql-snow .ql-toolbar button svg {
+  width: 124px;
+  height: 124px;
+}
+
+.keyboard-toolbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f3f3f3;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  z-index: 1000;
+}

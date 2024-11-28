@@ -1,0 +1,13 @@
+<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
+  <app-header />
+  <ion-fab slot="fixed" horizontal="start" vertical="bottom">
+    <ion-fab-button color="dark">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="warning" [routerLink]="['/create-note']"
+        ><ion-icon name="document-text-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

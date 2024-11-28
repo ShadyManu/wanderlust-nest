@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Wanderlust Nest</string>
+    <string name="title_activity_main">Wanderlust Nest</string>
+    <string name="package_name">wanderlust.nest</string>
+    <string name="custom_url_scheme">wanderlust.nest</string>
+</resources>

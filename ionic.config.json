@@ -1,0 +1,7 @@
+{
+  "name": "wanderlust-nest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
