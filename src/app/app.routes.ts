@@ -31,7 +31,7 @@ export const routes: Routes = [
       import('./features/notes/notes.page').then((m) => m.NotesPage),
   },
   {
-    path: 'create-note',
+    path: 'create-note/:id',
     loadComponent: () =>
       import('./shared/components/create-note/create-note.component').then(
         (m) => m.CreateNoteComponent

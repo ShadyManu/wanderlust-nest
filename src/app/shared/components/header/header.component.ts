@@ -3,9 +3,9 @@ import { IonToolbar, IonTitle, IonHeader } from '@ionic/angular/standalone';
 import { AppService } from '../../services/app.service';
 
 @Component({
-    selector: 'app-header',
-    template: `
-    <ion-header class="ion-no-border" [collapse]="'condense'">
+  selector: 'app-header',
+  template: `
+    <ion-header class="ion-no-border pt-8" [collapse]="'condense'">
       <ion-toolbar color="#ffffff">
         <div class="flex flex-row items-center justify-between">
           <ion-title size="large" class="mt-[3px]">{{
@@ -15,7 +15,7 @@ import { AppService } from '../../services/app.service';
       </ion-toolbar>
     </ion-header>
   `,
-    imports: [IonTitle, IonToolbar, IonHeader]
+  imports: [IonTitle, IonToolbar, IonHeader],
 })
 export class HeaderComponent {
   appService = inject(AppService);

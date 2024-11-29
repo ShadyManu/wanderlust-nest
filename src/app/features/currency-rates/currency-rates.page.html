@@ -12,7 +12,7 @@
 
     <!-- SLIDER -->
     <div
-      class="flex flex-col flex-wrap overflow-x-scroll no-scrollbar h-[120px] px-4 py-0"
+      class="flex flex-col flex-wrap overflow-x-scroll no-scrollbar h-[125px] px-4 py-0"
     >
       @for (country of filteredCountries(); track country) {
       <div (click)="onCurrencyClick(country)">
@@ -68,7 +68,7 @@
     <div class="px-4">
       <h1 class="text-2xl">Conversion rate</h1>
       @if (currencyRate() !== null) {
-      <h1 class="text-lg">
+      <h1 class="text-2xl">
         {{ '\u200E1 ' + selectedFirstCountry()!.key }} = {{ currencyRate() + ' '
         + selectedSecondCountry()!.key }}
       </h1>
