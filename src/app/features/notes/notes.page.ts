@@ -1,31 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import {
   IonContent,
   IonFab,
   IonFabButton,
   IonIcon,
-  IonFabList,
+  IonAccordionGroup,
+  IonAccordion,
+  IonItem,
+  IonLabel,
 } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { addIcons } from 'ionicons';
 import {
   add,
-  createOutline,
+  chevronDownOutline,
   documentTextOutline,
   pencilOutline,
   trashOutline,
 } from 'ionicons/icons';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { CreateNoteComponent } from 'src/app/shared/components/create-note/create-note.component';
 import { CommonModule } from '@angular/common';
-import { NoteCardComponent } from '../../shared/components/note-card/note-card.component';
+import {
+  SwipeCardAction,
+  SwipeCardComponent,
+} from '../../shared/components/swipe-card/swipe-card.component';
+import { Note } from 'src/app/shared/types/note.types';
+import { NoteService } from 'src/app/shared/services/note.service';
 
 @Component({
   selector: 'app-notes',
   templateUrl: './notes.page.html',
   styleUrls: ['./notes.page.scss'],
   imports: [
-    IonFabList,
     IonIcon,
     IonFabButton,
     IonFab,
@@ -33,31 +40,49 @@ import { NoteCardComponent } from '../../shared/components/note-card/note-card.c
     HeaderComponent,
     RouterModule,
     CommonModule,
-    NoteCardComponent,
+    SwipeCardComponent,
+    IonAccordionGroup,
+    IonAccordion,
+    IonItem,
+    IonLabel,
   ],
 })
 export class NotesPage {
   public component = CreateNoteComponent;
 
-  notesId: string[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+  deletingNoteId = signal<string | null>(null);
+  scrollY = signal<boolean>(true);
+  router = inject(Router);
+  isOverlayOpen = signal<boolean>(false);
+  isClosingOverlay = signal<boolean>(false);
+  notes: Note[] = [];
+
+  noteService = inject(NoteService);
 
   constructor() {
-    addIcons({ add, documentTextOutline, trashOutline, pencilOutline });
+    this.notes = this.noteService.getAllNotesByUserId();
+    addIcons({
+      add,
+      documentTextOutline,
+      trashOutline,
+      pencilOutline,
+      chevronDownOutline,
+    });
   }
 
-  public createNote() {
-    console.log('Create note');
+  swipeCardAction($event: { noteId: string; action: SwipeCardAction }) {
+    if ($event.action === SwipeCardAction.DELETE) {
+      // TODO
+      this.deletingNoteId.set($event.noteId);
+      setTimeout(() => {
+        this.notes = this.notes.filter((note) => note.id !== $event.noteId);
+      }, 500);
+    } else if ($event.action === SwipeCardAction.OPEN) {
+      this.router.navigate(['/edit-note', $event.noteId]);
+    }
   }
 
-  onEdit(event: Event): void {
-    event.stopPropagation(); // Previene l'espansione durante il clic sul pulsante
-    console.log('Modifica cliccato');
-    // Collega qui la tua logica di modifica
-  }
-
-  onDelete(event: Event): void {
-    event.stopPropagation(); // Previene l'espansione durante il clic sul pulsante
-    console.log('Cancella cliccato');
-    // Collega qui la tua logica di cancellazione
+  setScrollY($event: boolean) {
+    this.scrollY.set($event);
   }
 }

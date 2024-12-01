@@ -1,31 +1,64 @@
-<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
+<ion-content
+  class="ion-padding"
+  [scrollX]="false"
+  [scrollY]="scrollY()"
+  [color]="'light'"
+>
   <!-- Header -->
   <app-header />
 
-  <!-- Contenitore delle card con spazio per il pulsante fisso -->
-  <div class="pt-6 flex flex-col w-full ion-padding box-border">
-    @for (note of notesId; track note) {
-    <app-note-card [noteId]="note" />
-    }
+  <div class="pt-6 flex flex-col w-full box-border gap-4">
+    <ion-accordion-group expand="inset" class="mx-0">
+      <ion-accordion value="first" class="bg-white">
+        <ion-item slot="header" color="white">
+          <ion-label>Favorites</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content"></div>
+      </ion-accordion>
+    </ion-accordion-group>
   </div>
 
-  <!-- Bottoni (fixed) -->
+  <div class="flex flex-col w-full box-border gap-4">
+    <ion-accordion-group expand="inset" [mode]="'ios'" class="mx-0">
+      <ion-accordion value="first" [toggleIcon]="'chevron-down-outline'">
+        <ion-item slot="header" color="white">
+          <ion-label>All</ion-label>
+        </ion-item>
+        <div class="flex flex-col" slot="content">
+          @for (note of notes; track note) {
+          <app-swipe-card
+            [note]="note"
+            (scrollY)="setScrollY($event)"
+            (swipeCardOutput)="swipeCardAction($event)"
+            [class.fade-out-card]="deletingNoteId() === note.id"
+          />
+          }
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
+
   <ion-fab
     slot="fixed"
-    horizontal="center"
-    vertical="bottom"
-    class="pb-8 ios fab-horizontal-center fab-vertical-bottom"
-    ng-reflect-horizontal="center"
-    ng-reflect-vertical="bottom"
+    vertical="top"
+    horizontal="end"
+    [edge]="false"
+    class="mt-11 z-[99999]"
   >
-    <ion-fab-button color="dark">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-
-    <ion-fab-list side="top" class="pb-8 ios fab-list-side-top">
-      <ion-fab-button color="warning" [routerLink]="['/create-note', '50115']">
-        <ion-icon name="document-text-outline"></ion-icon>
+    <div>
+      <ion-fab-button
+        color="warning"
+        size="small"
+        [translucent]="true"
+        mode="ios"
+        [routerLink]="['/create-note']"
+      >
+        <ion-icon name="add"></ion-icon>
       </ion-fab-button>
-    </ion-fab-list>
+    </div>
   </ion-fab>
+
+  @if(isOverlayOpen()) {
+  <div class="overlay" [class.fade-out]="isClosingOverlay()"></div>
+  }
 </ion-content>

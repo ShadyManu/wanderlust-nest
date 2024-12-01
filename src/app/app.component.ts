@@ -5,9 +5,15 @@ import { AppService } from './shared/services/app.service';
 import { AppPage } from './shared/types/layout.types';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: 'app.component.html',
-    imports: [IonContent, IonApp, IonRouterOutlet]
+  selector: 'app-root',
+  template: `
+    <ion-app>
+      <ion-content [scrollX]="false" [scrollY]="false" [color]="'light'">
+        <ion-router-outlet></ion-router-outlet>
+      </ion-content>
+    </ion-app>
+  `,
+  imports: [IonContent, IonApp, IonRouterOutlet],
 })
 export class AppComponent implements OnInit {
   appService = inject(AppService);
@@ -38,6 +44,8 @@ export class AppComponent implements OnInit {
         return AppPage.Notes;
       case lowerUrl.includes('create-note'):
         return AppPage.CreateNote;
+      case lowerUrl.includes('edit-note'):
+        return AppPage.EditNote;
       case lowerUrl.includes('planner'):
         return AppPage.Planner;
       default:

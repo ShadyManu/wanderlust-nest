@@ -1,4 +1,9 @@
-<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
+<ion-content
+  class="ion-padding"
+  [scrollX]="false"
+  [scrollY]="false"
+  [color]="'light'"
+>
   <div class="h-full flex flex-col gap-4">
     <app-header />
     <div class="flex flex-col justify-between gap-8 flex-grow">
@@ -15,7 +20,11 @@
         </tiptap-bubble-menu>
       </div>
 
-      <ion-button class="w-full h-8 pb-16" [disabled]="isSaveDisabled()">
+      <ion-button
+        class="w-full h-8 pb-16"
+        [disabled]="isSaveDisabled()"
+        [color]="'warning'"
+      >
         <ion-label (click)="onSaveClick()">
           @if(isLoading()) {
           <ion-spinner></ion-spinner>

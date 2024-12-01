@@ -1,4 +1,9 @@
-<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
+<ion-content
+  class="ion-padding"
+  [scrollX]="false"
+  [scrollY]="false"
+  [color]="'light'"
+>
   <app-header />
   <div class="gap-8 flex flex-col">
     <!-- SEARCHBAR -->
@@ -7,6 +12,7 @@
         [debounce]="300"
         (ionInput)="onSearch($event)"
         class="pb-0"
+        [color]="'white'"
       ></ion-searchbar>
     </div>
 
@@ -17,7 +23,7 @@
       @for (country of filteredCountries(); track country) {
       <div (click)="onCurrencyClick(country)">
         <ion-button
-          [color]="country.key === selectedFirstCountry()?.key || country.key === selectedSecondCountry()?.key ? 'success' : 'light'"
+          [color]="country.key === selectedFirstCountry()?.key || country.key === selectedSecondCountry()?.key ? 'success' : 'white'"
           class="w-[80px]"
           >{{country.key}}</ion-button
         >
@@ -39,7 +45,7 @@
 
     <!-- AMOUNT INPUT -->
     <div class="px-4">
-      <h1 class="text-lg">Enter amount</h1>
+      <h1 class="text-2xl">Enter amount</h1>
       <ion-item class="p-0">
         <ion-input
           aria-label="Number input"
@@ -48,7 +54,7 @@
           [debounce]="500"
           (ionInput)="onInput($event)"
           [value]="firstCountryAmount()"
-        ></ion-input>
+        />
       </ion-item>
     </div>
 
@@ -60,7 +66,7 @@
           aria-label="Converted amount"
           [disabled]="true"
           [value]="conversionResult() ? conversionResult() + ' ' + selectedSecondCountry()!.symbol : null"
-        ></ion-input>
+        />
       </ion-item>
     </div>
 
