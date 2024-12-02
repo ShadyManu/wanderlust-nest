@@ -55,12 +55,14 @@ export class NotesPage {
   router = inject(Router);
   isOverlayOpen = signal<boolean>(false);
   isClosingOverlay = signal<boolean>(false);
-  notes: Note[] = [];
+
+  allNotes: Note[] = [];
+  favoriteNotes: Note[] = [];
 
   noteService = inject(NoteService);
 
   constructor() {
-    this.notes = this.noteService.getAllNotesByUserId();
+    this.allNotes = this.noteService.getAllNotesByUserId();
     addIcons({
       add,
       documentTextOutline,
@@ -75,7 +77,9 @@ export class NotesPage {
       // TODO
       this.deletingNoteId.set($event.noteId);
       setTimeout(() => {
-        this.notes = this.notes.filter((note) => note.id !== $event.noteId);
+        this.allNotes = this.allNotes.filter(
+          (note) => note.id !== $event.noteId
+        );
       }, 500);
     } else if ($event.action === SwipeCardAction.OPEN) {
       this.router.navigate(['/edit-note', $event.noteId]);
