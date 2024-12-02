@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD906B30-32EE-4018-B183-D1D9E4D8928C}|Web\\Web.csproj|c:\\users\\manuel raso\\source\\repos\\cleanarchitecturebasetemplate\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD906B30-32EE-4018-B183-D1D9E4D8928C}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6304494-D37F-405D-8598-07D4F66FCC77}|Application\\Application.csproj|c:\\users\\manuel raso\\source\\repos\\cleanarchitecturebasetemplate\\application\\features\\todo\\queries\\getalltodos\\getalltodosqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6304494-D37F-405D-8598-07D4F66FCC77}|Application\\Application.csproj|solutionrelative:application\\features\\todo\\queries\\getalltodos\\getalltodosqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6304494-D37F-405D-8598-07D4F66FCC77}|Application\\Application.csproj|c:\\users\\manuel raso\\source\\repos\\cleanarchitecturebasetemplate\\application\\features\\todo\\queries\\getalltodos\\getalltodosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6304494-D37F-405D-8598-07D4F66FCC77}|Application\\Application.csproj|solutionrelative:application\\features\\todo\\queries\\getalltodos\\getalltodosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35611CCB-47CF-44B1-8FCF-D5ED13ECC3C0}|Infrastructure\\Infrastructure.csproj|c:\\users\\manuel raso\\source\\repos\\cleanarchitecturebasetemplate\\infrastructure\\data\\entities\\todoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35611CCB-47CF-44B1-8FCF-D5ED13ECC3C0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\entities\\todoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CEB830-3C26-4005-85BD-43A40514BB2F}|Presentation\\Presentation.csproj|c:\\users\\manuel raso\\source\\repos\\cleanarchitecturebasetemplate\\presentation\\endpoints\\todo\\todoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CEB830-3C26-4005-85BD-43A40514BB2F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\endpoints\\todo\\todoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6304494-D37F-405D-8598-07D4F66FCC77}|Application\\Application.csproj|c:\\users\\manuel raso\\source\\repos\\cleanarchitecturebasetemplate\\application\\dtos\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6304494-D37F-405D-8598-07D4F66FCC77}|Application\\Application.csproj|solutionrelative:application\\dtos\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TodoEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Presentation\\Endpoints\\Todo\\TodoEndpoints.cs",
+              "RelativeDocumentMoniker": "Presentation\\Endpoints\\Todo\\TodoEndpoints.cs",
+              "ToolTip": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Presentation\\Endpoints\\Todo\\TodoEndpoints.cs",
+              "RelativeToolTip": "Presentation\\Endpoints\\Todo\\TodoEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:59:39.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Infrastructure\\Data\\Entities\\TodoEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Entities\\TodoEntity.cs",
+              "ToolTip": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Infrastructure\\Data\\Entities\\TodoEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Entities\\TodoEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:59:35.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:54:48.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MapsterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Application\\Dtos\\MapsterConfig.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\MapsterConfig.cs",
+              "ToolTip": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Application\\Dtos\\MapsterConfig.cs",
+              "RelativeToolTip": "Application\\Dtos\\MapsterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:52:58.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetAllTodosQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQueryHandler.cs",
+              "RelativeToolTip": "Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:37:25.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllTodosQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQuery.cs",
+              "ToolTip": "C:\\Users\\Manuel Raso\\source\\repos\\CleanArchitectureBaseTemplate\\Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQuery.cs",
+              "RelativeToolTip": "Application\\Features\\ToDo\\Queries\\GetAllTodos\\GetAllTodosQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T10:36:09.155Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

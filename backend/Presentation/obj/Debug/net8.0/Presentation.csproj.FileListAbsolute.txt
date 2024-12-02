@@ -1,0 +1,17 @@
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\bin\Debug\net8.0\Presentation.deps.json
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\bin\Debug\net8.0\Presentation.dll
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\bin\Debug\net8.0\Presentation.pdb
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presentation.csproj.AssemblyReference.cache
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presentation.AssemblyInfoInputs.cache
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presentation.AssemblyInfo.cs
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presentation.dll
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\refint\Presentation.dll
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presentation.pdb
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\ref\Presentation.dll
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\bin\Debug\net8.0\Application.dll
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\bin\Debug\net8.0\Application.pdb
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\Manuel Raso\source\repos\CleanArchitectureBaseTemplate\Presentation\obj\Debug\net8.0\Presenta.BC777DBE.Up2Date
