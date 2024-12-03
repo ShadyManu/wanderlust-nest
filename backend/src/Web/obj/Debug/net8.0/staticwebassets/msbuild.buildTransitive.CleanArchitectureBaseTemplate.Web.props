@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/CleanArchitectureBaseTemplate.Web.props" />
+</Project>

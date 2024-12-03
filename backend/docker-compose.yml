@@ -8,20 +8,31 @@ services:
       context: .
       dockerfile: src/Web/Dockerfile
     ports:
-      - "5000:5000"
-      - "5001:5001"
-#     depends_on:
-#       - db
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - db
+    networks:
+      - myapp
 
-#   db:
-#     image: "mcr.microsoft.com/mssql/server"
-#     environment:
-#       SA_PASSWORD: "Password123!"
-#       ACCEPT_EULA: "Y"
-#     ports:
-#       - "1433:1433"
-#     volumes:
-#       - db-data:/var/opt/mssql
+  db:
+    image: "postgres:15"
+    container_name: "db"
+    platform: "linux/arm64"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "dbname"
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - myapp
 
-# volumes:
-#   db-data:
+volumes:
+  db-data:
+    
+networks:
+  myapp:
+    driver: bridge

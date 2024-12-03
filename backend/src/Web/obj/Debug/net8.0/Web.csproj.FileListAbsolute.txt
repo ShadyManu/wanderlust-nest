@@ -1,0 +1,279 @@
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.deps.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.pdb
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/Web.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/Web.AssemblyInfoInputs.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/Web.AssemblyInfo.cs
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/Web.csproj.CoreCompileInputs.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/refint/CleanArchitectureBaseTemplate.Web.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.pdb
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/ref/CleanArchitectureBaseTemplate.Web.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/appsettings.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.staticwebassets.endpoints.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.exe
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.runtimeconfig.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/scopedcss/bundle/CleanArchitectureBaseTemplate.Web.styles.css
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets/msbuild.CleanArchitectureBaseTemplate.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets/msbuild.CleanArchitectureBaseTemplate.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets/msbuild.build.CleanArchitectureBaseTemplate.Web.props
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.CleanArchitectureBaseTemplate.Web.props
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.CleanArchitectureBaseTemplate.Web.props
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/staticwebassets.upToDateCheck.txt
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/Web.genruntimeconfig.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Carter.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Carter.Analyzers.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/FluentValidation.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/Web.csproj.AssemblyReference.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/obj/Debug/net8.0/Web.csproj.Up2Date
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Presentation.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Presentation.pdb
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Mapster.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Mapster.Core.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Mapster.DependencyInjection.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/MediatR.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/MediatR.Contracts.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Application.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Infrastructure.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Application.pdb
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Web/bin/Debug/net8.0/Infrastructure.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/appsettings.Development.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/appsettings.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.deps.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.runtimeconfig.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Carter.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Carter.Analyzers.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/FluentValidation.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Mapster.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Mapster.Core.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Mapster.DependencyInjection.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/MediatR.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Infrastructure.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Presentation.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Presentation.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Application.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Infrastructure.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.csproj.AssemblyReference.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.GeneratedMSBuildEditorConfig.editorconfig
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.AssemblyInfoInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.AssemblyInfo.cs
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.csproj.CoreCompileInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.MvcApplicationPartsAssemblyInfo.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.sourcelink.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/scopedcss/bundle/CleanArchitectureBaseTemplate.Web.styles.css
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/staticwebassets.build.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/staticwebassets.development.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/staticwebassets/msbuild.CleanArchitectureBaseTemplate.Web.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/staticwebassets/msbuild.build.CleanArchitectureBaseTemplate.Web.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.CleanArchitectureBaseTemplate.Web.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.CleanArchitectureBaseTemplate.Web.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.csproj.Up2Date
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/refint/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/Web.genruntimeconfig.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/obj/Debug/net8.0/ref/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Npgsql.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Web/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/appsettings.Development.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/appsettings.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.deps.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.runtimeconfig.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/CleanArchitectureBaseTemplate.Web.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Carter.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Carter.Analyzers.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/FluentValidation.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Mapster.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Mapster.Core.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Mapster.DependencyInjection.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/MediatR.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Npgsql.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Infrastructure.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Presentation.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Presentation.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Application.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Infrastructure.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.csproj.AssemblyReference.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.GeneratedMSBuildEditorConfig.editorconfig
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.AssemblyInfoInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.AssemblyInfo.cs
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.csproj.CoreCompileInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.MvcApplicationPartsAssemblyInfo.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.sourcelink.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/staticwebassets.build.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/staticwebassets.development.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/staticwebassets/msbuild.CleanArchitectureBaseTemplate.Web.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/staticwebassets/msbuild.build.CleanArchitectureBaseTemplate.Web.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.CleanArchitectureBaseTemplate.Web.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.CleanArchitectureBaseTemplate.Web.props
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/scopedcss/bundle/CleanArchitectureBaseTemplate.Web.styles.css
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.csproj.Up2Date
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/refint/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/CleanArchitectureBaseTemplate.Web.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/Web.genruntimeconfig.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/Debug/net8.0/ref/CleanArchitectureBaseTemplate.Web.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Humanizer.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/System.CodeDom.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/System.Composition.Convention.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/System.Composition.Hosting.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/System.Composition.Runtime.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/System.Composition.TypedParts.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Domain.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/Domain.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

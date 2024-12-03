@@ -1,0 +1,49 @@
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/bin/Debug/net8.0/Application.deps.json
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/bin/Debug/net8.0/Application.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/bin/Debug/net8.0/Application.pdb
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/bin/Debug/net8.0/Infrastructure.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/bin/Debug/net8.0/Infrastructure.pdb
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Applicat.44B5EDA2.Up2Date
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Application.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/refint/Application.dll
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/Application.pdb
+C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Application/obj/Debug/net8.0/ref/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/bin/Debug/net8.0/Application.deps.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/bin/Debug/net8.0/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/bin/Debug/net8.0/Application.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/bin/Debug/net8.0/Infrastructure.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/bin/Debug/net8.0/Infrastructure.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.sourcelink.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Applicat.44B5EDA2.Up2Date
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/refint/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/Application.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/Application/obj/Debug/net8.0/ref/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/bin/Debug/net8.0/Application.deps.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/bin/Debug/net8.0/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/bin/Debug/net8.0/Application.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/bin/Debug/net8.0/Infrastructure.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/bin/Debug/net8.0/Infrastructure.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.sourcelink.json
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Applicat.44B5EDA2.Up2Date
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/refint/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/Application.pdb
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/obj/Debug/net8.0/ref/Application.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/bin/Debug/net8.0/Domain.dll
+/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/bin/Debug/net8.0/Domain.pdb
