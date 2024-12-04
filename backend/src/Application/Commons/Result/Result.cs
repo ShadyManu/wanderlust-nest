@@ -3,7 +3,7 @@ namespace Application.Commons.Result;
 public class Result<TResult>
 {
     public TResult? Data { get; set; }
-    public Exception? Error { get; set; }
+    public ResultError? Error { get; set; }
 
     private Result(TResult? data)
     {
@@ -11,7 +11,7 @@ public class Result<TResult>
         Error = null;
     }
 
-    private Result(Exception error)
+    private Result(ResultError error)
     {
         Data = default;
         Error = error;
@@ -20,6 +20,8 @@ public class Result<TResult>
     public static Result<TResult> Success(TResult value) =>
         new(value);
 
-    public static Result<TResult> Failure(Exception error) =>
+    public static Result<TResult> Failure(ResultError error) =>
         new(error);
 }
+
+public record ResultError(string Message, string? InnerException = null);

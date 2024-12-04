@@ -27,8 +27,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Infrastructure/Infrastructure.csproj"
+              "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Domain/Domain.csproj": {
+                "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Domain/Domain.csproj"
               }
             }
           }
@@ -48,6 +48,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Carter": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.11.0, )"
@@ -60,9 +64,17 @@
               "target": "Package",
               "version": "[7.4.0, )"
             },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
             }
           },
           "imports": [
@@ -167,6 +179,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/Application.csproj": {
+                "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/Application.csproj"
+              },
               "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Domain/Domain.csproj": {
                 "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Domain/Domain.csproj"
               }
@@ -188,6 +203,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -195,6 +226,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[8.0.11, )"
             },
@@ -318,7 +353,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/Web.csproj",
-        "projectName": "CleanArchitectureBaseTemplate.Web",
+        "projectName": "WanderlustNest.Web",
         "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/Web.csproj",
         "packagesPath": "/Users/manuelraso/.nuget/packages/",
         "outputPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Web/obj/",
@@ -339,6 +374,9 @@
             "projectReferences": {
               "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/Application.csproj": {
                 "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Application/Application.csproj"
+              },
+              "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Infrastructure/Infrastructure.csproj"
               },
               "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/Presentation.csproj": {
                 "projectPath": "/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/Presentation.csproj"
@@ -366,10 +404,6 @@
               "target": "Package",
               "version": "[8.2.1, )"
             },
-            "Mapster.DependencyInjection": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )"
@@ -387,6 +421,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.1.0, )"
             },
             "System.Text.Json": {
               "target": "Package",

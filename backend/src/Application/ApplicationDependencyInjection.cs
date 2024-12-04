@@ -1,6 +1,9 @@
 using System.Reflection;
 using Application.Commons.Behaviors;
+using Application.Dto;
+using Carter;
 using FluentValidation;
+using Mapster;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,7 +17,13 @@ public static class ApplicationDependencyInjection
         services.AddMediatR(cfg =>
         {
             cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+            cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehaviour<,>));
             cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
         });
+        
+        services.AddMapster();
+        MapsterConfig.Configure();
+
+        services.AddCarter();
     }
 }

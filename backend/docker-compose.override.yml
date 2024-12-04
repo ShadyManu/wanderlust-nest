@@ -6,10 +6,11 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8000
       - ASPNETCORE_HTTPS_PORTS=8001
-      - ASPNETCORE_URLS=http://+:5000
-    ports:
-      - "5000"
-      - "5001"
+      - ASPNETCORE_URLS=http://+:8080
+      - ApplyMigration=true
+      - SeedData=false
+      - Database__DatabaseProvider=PostgreSQL
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=wanderlust-nest;Username=postgres;Password=postgres;Include Error Detail=true
     volumes:
       - ./secrets:/home/app/.microsoft/usersecrets:ro
       - ./https:/home/app/.aspnet/https:ro

@@ -15,5 +15,7 @@ public static class MapsterConfig
             .Map(dest => dest.Description, src => src.Description);
             // example of nested objects mapping
             //.Map(dest => dest.Reviews, src => src.Reviews.Adapt<List<ReviewDto>>())
+
+        TypeAdapterConfig<TodoEntity, CreateTodoDto>.NewConfig();
     }
 }

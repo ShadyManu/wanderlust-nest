@@ -7,11 +7,11 @@ services:
     build:
       context: .
       dockerfile: src/Web/Dockerfile
+    depends_on:
+      - db
     ports:
       - "8080:8080"
       - "8081:8081"
-    depends_on:
-      - db
     networks:
       - myapp
 
@@ -22,7 +22,7 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "postgres"
-      POSTGRES_DB: "dbname"
+      POSTGRES_DB: "wanderlust-nest"
     ports:
       - "5432:5432"
     volumes:

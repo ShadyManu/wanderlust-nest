@@ -6,24 +6,25 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-	<RootNamespace>CleanArchitectureBaseTemplate.Web</RootNamespace>
-	<AssemblyName>CleanArchitectureBaseTemplate.Web</AssemblyName>
+	<RootNamespace>WanderlustNest.Web</RootNamespace>
+	<AssemblyName>WanderlustNest.Web</AssemblyName>
 	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="../Presentation/Presentation.csproj" />
 		<ProjectReference Include="..\Application\Application.csproj" />
+		<ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
 	</ItemGroup>
 	
 	<ItemGroup>
 		<PackageReference Include="Carter" Version="8.2.1" />
-		<PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
 		<PackageReference Include="MediatR" Version="12.4.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
 		<PackageReference Include="System.Text.Json" Version="8.0.5" />
 		
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0" />

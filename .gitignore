@@ -1,1 +1,72 @@
-node_modules
+# .NET Core / .NET 5+ Build Files
+bin/
+obj/
+
+# .NET Core SDK / VS for Mac / Rider config directories
+.vscode/
+.idea/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.editorconfig
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer Log Files
+*.log
+
+# Windows Installer Cache
+Installer/
+
+# .NET Core Debugging
+.vs/
+
+# ASP.NET Temporary files
+.vs2019/
+.vs2017/
+
+# User-specific files (e.g. macOS)
+.idea/
+.vscode/
+macos/
+
+# Dotnet Core runtime
+*.dotnet/
+
+# Rider IDE config
+.idea/
+
+# Local History (Visual Studio)
+.localhistory/
+
+# Microsoft Azure Functions local development environment
+.local/
+
+# npm packages
+node_modules/
+
+# NuGet
+# .NET Core
+.nuget/
+# User-specific NuGet configuration files
+.nuget.config
+# Project-specific NuGet configuration files
+.vs2019/.nuget/
+
+# ASP.NET 5 specific files
+# .NET 6+ (which uses SDK-style projects)
+project.lock.json
+project.fragment.lock.json
+
+# Windows Installer
+WindowsInstallerFile/
+
+# Mac .DS_Store files
+.DS_Store

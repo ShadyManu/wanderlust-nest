@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CleanArchitectureBaseTemplate.Web")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("WanderlustNest.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c81b39f598f2b31a46212de3e0a100b184511916")]
-[assembly: System.Reflection.AssemblyProductAttribute("CleanArchitectureBaseTemplate.Web")]
-[assembly: System.Reflection.AssemblyTitleAttribute("CleanArchitectureBaseTemplate.Web")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcaecd4a7744524dccad1f8a5c6b6eef29077375")]
+[assembly: System.Reflection.AssemblyProductAttribute("WanderlustNest.Web")]
+[assembly: System.Reflection.AssemblyTitleAttribute("WanderlustNest.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generato dalla classe WriteCodeFragment di MSBuild.

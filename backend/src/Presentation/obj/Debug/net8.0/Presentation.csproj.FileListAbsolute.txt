@@ -1,20 +1,20 @@
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/bin/Debug/net8.0/Presentation.deps.json
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/bin/Debug/net8.0/Presentation.dll
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/bin/Debug/net8.0/Presentation.pdb
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presentation.csproj.AssemblyReference.cache
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presentation.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfoInputs.cache
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfo.cs
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presentation.csproj.CoreCompileInputs.cache
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presentation.dll
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/refint/Presentation.dll
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presentation.pdb
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/ref/Presentation.dll
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/bin/Debug/net8.0/Application.dll
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/bin/Debug/net8.0/Infrastructure.dll
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/bin/Debug/net8.0/Application.pdb
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/bin/Debug/net8.0/Infrastructure.pdb
-C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj/Debug/net8.0/Presenta.BC777DBE.Up2Date
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/bin/Debug/net8.0/Presentation.deps.json
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/bin/Debug/net8.0/Presentation.dll
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/bin/Debug/net8.0/Presentation.pdb
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presentation.csproj.AssemblyReference.cache
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfoInputs.cache
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfo.cs
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presentation.csproj.CoreCompileInputs.cache
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presentation.dll
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/refint/Presentation.dll
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presentation.pdb
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/ref/Presentation.dll
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/bin/Debug/net8.0/Application.dll
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/bin/Debug/net8.0/Infrastructure.dll
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/bin/Debug/net8.0/Application.pdb
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/bin/Debug/net8.0/Infrastructure.pdb
+C:/Users/Manuel Raso/source/repos/WanderlustNest/Presentation/obj/Debug/net8.0/Presenta.BC777DBE.Up2Date
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/Presentation/bin/Debug/net8.0/Presentation.deps.json
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/Presentation/bin/Debug/net8.0/Presentation.dll
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/Presentation/bin/Debug/net8.0/Presentation.pdb
@@ -37,9 +37,7 @@ C:/Users/Manuel Raso/source/repos/CleanArchitectureBaseTemplate/Presentation/obj
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/bin/Debug/net8.0/Presentation.dll
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/bin/Debug/net8.0/Presentation.pdb
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/bin/Debug/net8.0/Application.dll
-/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/bin/Debug/net8.0/Infrastructure.dll
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/bin/Debug/net8.0/Application.pdb
-/Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/bin/Debug/net8.0/Infrastructure.pdb
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/obj/Debug/net8.0/Presentation.csproj.AssemblyReference.cache
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/obj/Debug/net8.0/Presentation.GeneratedMSBuildEditorConfig.editorconfig
 /Users/manuelraso/Documents/repo/wanderlust-nest/backend/src/Presentation/obj/Debug/net8.0/Presentation.AssemblyInfoInputs.cache
