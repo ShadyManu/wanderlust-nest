@@ -15,13 +15,13 @@ public class AuditableEntityConfiguration<TEntity> : BaseEntityConfiguration<TEn
         
         builder.Property(e => e.CreatedBy)
             .HasMaxLength(50)
-            .IsRequired();
+            .IsRequired(false);
         
         builder.Property(e => e.LastModified)
             .IsRequired();
         
         builder.Property(e => e.LastModifiedBy)
             .HasMaxLength(50)
-            .IsRequired();
+            .IsRequired(false);
     }
 }

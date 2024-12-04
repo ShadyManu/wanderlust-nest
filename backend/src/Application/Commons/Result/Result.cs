@@ -22,6 +22,8 @@ public class Result<TResult>
 
     public static Result<TResult> Failure(ResultError error) =>
         new(error);
+    public static Result<TResult> Failure(string error) =>
+        new(new ResultError(error));
 }
 
 public record ResultError(string Message, string? InnerException = null);

@@ -6,11 +6,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Data.Configurations;
 
-public class TodoEntityConfiguration : BaseEntityConfiguration<TodoEntity>
+public class NoteEntityConfiguration : BaseEntityConfiguration<NoteEntity>
 {
-    public override void Configure(EntityTypeBuilder<TodoEntity> builder)
+    public override void Configure(EntityTypeBuilder<NoteEntity> builder)
     {
         base.Configure(builder);
-        builder.ToTable(TableNames.Todos);
+        builder.ToTable(TableNames.Notes);
+
+        builder.Property(e => e.Text)
+            .IsRequired(true);
     }
 }

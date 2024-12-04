@@ -2,5 +2,5 @@ namespace Application.Commons.Interfaces;
 
 public interface IUser
 {
-    string? Id { get; }
+    Guid? Id { get; }
 }

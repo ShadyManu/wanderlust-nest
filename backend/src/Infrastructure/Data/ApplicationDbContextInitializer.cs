@@ -63,7 +63,7 @@ public class ApplicationDbContextInitializer(
         }
     }
 
-    public async Task TrySeedAsync()
+    private async Task TrySeedAsync()
     {
         await Task.Delay(500);
         // TODO

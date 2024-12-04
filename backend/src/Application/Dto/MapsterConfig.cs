@@ -1,4 +1,5 @@
-﻿using Application.Dto.Todo;
+﻿using Application.Dto.Note;
+using Application.Dto.Todo;
 using Domain.Entities;
 using Mapster;
 
@@ -8,7 +9,7 @@ public static class MapsterConfig
 {
     public static void Configure()
     {
-        // Configure Product to ProductDto mapping
+        // Configure TODO
         TypeAdapterConfig<TodoEntity, TodoDto>.NewConfig()
             .Map(dest => dest.Id, src => src.Id)
             .Map(dest => dest.Title, src => src.Title)
@@ -17,5 +18,9 @@ public static class MapsterConfig
             //.Map(dest => dest.Reviews, src => src.Reviews.Adapt<List<ReviewDto>>())
 
         TypeAdapterConfig<TodoEntity, CreateTodoDto>.NewConfig();
+        
+        // Configure Note
+        TypeAdapterConfig<NoteEntity, NoteDto>.NewConfig();
+        TypeAdapterConfig<NoteEntity, CreateNoteDto>.NewConfig();
     }
 }
