@@ -20,21 +20,25 @@ public class NoteEndpoints() : ApiModule("/notes")
     {
         app.MapGet("/", async (ISender sender) => 
                 await sender.Send(new GetAllNotesQuery()))
+            .RequireAuthorization()
             .IncludeInOpenApi()
             .WithTags(EndpointTag);
         
         app.MapPost("/", async (ISender sender, CreateNoteDto note) =>
                 await sender.Send(new CreateNoteCommand(note)))
+            .RequireAuthorization()
             .IncludeInOpenApi()
             .WithTags(EndpointTag);
         
         app.MapPatch("/", async (ISender sender, UpdateNoteDto updatedNote) => 
                 await sender.Send(new UpdateNoteCommand(updatedNote)))
+            .RequireAuthorization()
             .IncludeInOpenApi()
             .WithTags(EndpointTag);
         
-        app.MapDelete("/", async (ISender sender, Guid noteId) => 
-                await sender.Send(new DeleteNoteCommand(noteId)))
+        app.MapDelete("/{id:guid}", async (ISender sender, Guid id) => 
+                await sender.Send(new DeleteNoteCommand(id)))
+            .RequireAuthorization()
             .IncludeInOpenApi()
             .WithTags(EndpointTag);
     }

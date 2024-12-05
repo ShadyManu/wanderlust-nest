@@ -20,8 +20,10 @@ import StarterKit from '@tiptap/starter-kit';
 import { TiptapBubbleMenuDirective, TiptapEditorDirective } from 'ngx-tiptap';
 import Placeholder from '@tiptap/extension-placeholder';
 import { NoteService } from '../../services/note.service';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject } from 'rxjs';
 import { Note } from '../../types/note.types';
+import { Router } from '@angular/router';
+import { NoteStore } from 'src/app/features/notes/store/notes.store';
 
 @Component({
   selector: 'app-create-note',
@@ -38,6 +40,7 @@ import { Note } from '../../types/note.types';
     TiptapBubbleMenuDirective,
   ],
   encapsulation: ViewEncapsulation.None,
+  providers: [NoteStore],
 })
 export class CreateNoteComponent implements OnInit, OnDestroy {
   id = input.required<string>();
@@ -48,29 +51,20 @@ export class CreateNoteComponent implements OnInit, OnDestroy {
   isSaveDisabled = signal(true);
 
   noteService = inject(NoteService);
+  noteStore = inject(NoteStore);
+
+  router = inject(Router);
   editor = new Editor({
     extensions: [StarterKit, Placeholder],
   });
 
   private destroy$ = new Subject<void>();
 
-  ngOnInit() {
-    this.loadNoteById(this.id());
-  }
+  ngOnInit(): void {
+    // TODO : read note by id from signal store
 
-  private loadNoteById(id: string) {
-    this.noteService
-      .getNoteById(this.id())
-      .pipe(takeUntil(this.destroy$))
-      .subscribe({
-        next: (note) => {
-          if (!note) return;
-
-          this.retrievedNote = note;
-          // TODO
-          this.value = `<b>${note.title}</b><br>${note.description}`;
-        },
-      });
+    this.isSaveDisabled.set(false);
+    console.log(this.isSaveDisabled());
   }
 
   onModelChange($event: any) {
@@ -79,10 +73,24 @@ export class CreateNoteComponent implements OnInit, OnDestroy {
 
   public onSaveClick() {
     this.isLoading.set(true);
+
     console.log(this.editor.getHTML());
-    setTimeout(() => {
-      this.isLoading.set(false);
-    }, 2000);
+
+    this.noteService.createNote({ text: this.editor.getHTML() }).subscribe({
+      next: (note) => {
+        this.noteStore.addNote(note);
+        console.log(this.noteStore.notes());
+        this.isLoading.set(false);
+        this.retrievedNote = note;
+        this.isSaveDisabled.set(true);
+
+        this.router.navigate(['/notes']);
+      },
+      error: (err) => {
+        console.error(err);
+        this.isLoading.set(false);
+      },
+    });
   }
 
   ngOnDestroy(): void {

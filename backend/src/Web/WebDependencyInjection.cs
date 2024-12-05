@@ -12,7 +12,8 @@ public static class WebDependencyInjection
         services.AddCors(options =>
         {
             options.AddPolicy("MyPolicy", b => b
-                .WithOrigins(["http://localhost:4200", "http://host.docker.internal:4200"])
+                // .WithOrigins(["http://localhost:8100", "http://host.docker.internal:8100"])
+                .WithOrigins("*")
                 .AllowAnyMethod()
                 .AllowAnyHeader()
             );

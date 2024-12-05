@@ -1,0 +1,41 @@
+<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
+  <div class="flex flex-col items-center">
+    <h4 class="text-2xl font-bold mb-4">
+      {{ "welcome.signup-page.title" | translate }}
+    </h4>
+    <p class="text-gray-500 mb-6">
+      {{ "welcome.signup-page.description" | translate }}
+    </p>
+  </div>
+
+  <ion-input
+    [placeholder]="'welcome.signup-page.email-placeholder' | translate"
+    [type]="'email'"
+    [ngModel]="emailValue()"
+    (ngModelChange)="emailValue.set($event)"
+    class="w-full mb-4"
+  />
+  <ion-input
+    [placeholder]="'welcome.signup-page.password-placeholder' | translate"
+    type="password"
+    [ngModel]="passwordValue()"
+    (ngModelChange)="passwordValue.set($event)"
+    class="w-full mb-4"
+  />
+
+  <p class="text-sm text-gray-400 mb-6">
+    {{ "welcome.signup-page.terms-and-conditions" | translate }}
+  </p>
+
+  <ion-button
+    expand="block"
+    class="font-bold py-2 px-4 rounded mb-4"
+    (click)="register()"
+    (keydown)="register()"
+    [disabled]="isLoading() || isSubmitDisabled()"
+  >
+    @if(isLoading()) {
+    <ion-spinner></ion-spinner>
+    } @else { {{ "welcome.signup-page.submit-button" | translate }} }
+  </ion-button>
+</ion-content>

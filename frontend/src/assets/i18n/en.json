@@ -1,0 +1,22 @@
+{
+  "welcome": {
+    "signup": "Sign Up",
+    "login": "Login",
+    "signup-page": {
+      "title": "Sign up",
+      "description": "Create an account to get started",
+      "email-placeholder": "Email",
+      "password-placeholder": "Password",
+      "terms-and-conditions": "By signing up, you agree to our Terms and Conditions",
+      "submit-button": "SIGN UP"
+    },
+    "login-page": {
+      "title": "Login",
+      "description": "Log in to your account",
+      "email-placeholder": "Email",
+      "password-placeholder": "Password",
+      "forgot-password": "Forgot password?",
+      "submit-button": "LOGIN"
+    }
+  }
+}

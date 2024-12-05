@@ -24,8 +24,10 @@
         class="w-full h-8 pb-16"
         [disabled]="isSaveDisabled()"
         [color]="'warning'"
+        (click)="onSaveClick()"
+        (keydown)="onSaveClick()"
       >
-        <ion-label (click)="onSaveClick()">
+        <ion-label>
           @if(isLoading()) {
           <ion-spinner></ion-spinner>
           } @else { Save Note }

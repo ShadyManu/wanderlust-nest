@@ -1,0 +1,57 @@
+<ion-content
+  class="ion-padding ion-text-center flex flex-col items-center"
+  color="light"
+  [scrollX]="false"
+  [scrollY]="false"
+>
+  <div class="w-full flex justify-center">
+    <img
+      [src]="globalStore.getLogo()"
+      class="w-full object-cover py-36"
+      alt="App Logo"
+    />
+  </div>
+
+  <div class="ion-margin-top w-full">
+    <ion-button
+      id="open-signup-modal"
+      expand="block"
+      class="ion-margin-top"
+      color="white"
+      >{{ 'welcome.signup' | translate }}</ion-button
+    >
+    <ion-button
+      id="open-login-modal"
+      expand="block"
+      class="ion-margin-top"
+      color="white"
+      >{{ 'welcome.login' | translate }}</ion-button
+    >
+  </div>
+
+  <ion-modal
+    trigger="open-signup-modal"
+    [initialBreakpoint]="1"
+    [breakpoints]="[0, 1]"
+    [backdropDismiss]="false"
+    [mode]="'ios'"
+    [animated]="true"
+  >
+    <ng-template>
+      <div class="block"><app-register class="h-full w-full" /></div>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal
+    trigger="open-login-modal"
+    [initialBreakpoint]="1"
+    [breakpoints]="[0, 1]"
+    [backdropDismiss]="false"
+    [mode]="'ios'"
+    [animated]="true"
+  >
+    <ng-template>
+      <div class="block"><app-login class="h-full w-full" /></div>
+    </ng-template>
+  </ion-modal>
+</ion-content>

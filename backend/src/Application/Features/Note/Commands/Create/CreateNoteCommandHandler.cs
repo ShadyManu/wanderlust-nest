@@ -6,11 +6,11 @@ using Mapster;
 
 namespace Application.Features.Note.Commands.Create;
 
-public record CreateNoteCommand(CreateNoteDto Note) : ICommand<Guid>;
+public record CreateNoteCommand(CreateNoteDto Note) : ICommand<NoteDto>;
 
-internal sealed class CreateNoteCommandHandler(IApplicationDbContext context, IUser User) : ICommandHandler<CreateNoteCommand, Guid>
+internal sealed class CreateNoteCommandHandler(IApplicationDbContext context, IUser User) : ICommandHandler<CreateNoteCommand, NoteDto>
 {
-    public async Task<Result<Guid>> Handle(CreateNoteCommand request, CancellationToken cancellationToken)
+    public async Task<Result<NoteDto>> Handle(CreateNoteCommand request, CancellationToken cancellationToken)
     {
         var entity = request.Note.Adapt<NoteEntity>();
         
@@ -18,7 +18,7 @@ internal sealed class CreateNoteCommandHandler(IApplicationDbContext context, IU
         var result = await context.SaveChangesAsync(cancellationToken);
         
         return result > 0 
-            ? Result<Guid>.Success(entity.Id) 
-            : Result<Guid>.Failure("Failed to create note"); 
+            ? Result<NoteDto>.Success(entity.Adapt<NoteDto>()) 
+            : Result<NoteDto>.Failure("Failed to create note"); 
     }
 }

@@ -21,7 +21,7 @@
         value="all-expanded"
       >
         <ion-item slot="header" color="white">
-          <ion-label>All</ion-label>
+          <ion-label>Favourites</ion-label>
         </ion-item>
         <div class="flex flex-col" slot="content">
           @for (note of favoriteNotes; track note) {
@@ -37,13 +37,14 @@
     </ion-accordion-group>
   </div>
 
+  @if (allNotes()) {
   <div class="flex flex-col w-full box-border gap-4">
     <ion-accordion-group
       expand="inset"
       [mode]="'ios'"
       class="mx-0"
       [multiple]="true"
-      [value]="allNotes && allNotes.length > 0 ? ['all-expanded'] : []"
+      [value]="!!allNotes() && allNotes()!.length > 0 ? ['all-expanded'] : []"
     >
       <ion-accordion
         value="first"
@@ -54,7 +55,7 @@
           <ion-label>All</ion-label>
         </ion-item>
         <div class="flex flex-col" slot="content">
-          @for (note of allNotes; track note) {
+          @for (note of noteStore.getNotes()(); track note) {
           <app-swipe-card
             [note]="note"
             (scrollY)="setScrollY($event)"
@@ -66,6 +67,7 @@
       </ion-accordion>
     </ion-accordion-group>
   </div>
+  }
 
   <ion-fab
     slot="fixed"

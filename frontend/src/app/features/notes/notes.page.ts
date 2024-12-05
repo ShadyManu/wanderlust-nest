@@ -1,4 +1,11 @@
-import { Component, inject, signal } from '@angular/core';
+import {
+  Component,
+  effect,
+  inject,
+  signal,
+  ViewEncapsulation,
+  WritableSignal,
+} from '@angular/core';
 import {
   IonContent,
   IonFab,
@@ -27,6 +34,7 @@ import {
 } from '../../shared/components/swipe-card/swipe-card.component';
 import { Note } from 'src/app/shared/types/note.types';
 import { NoteService } from 'src/app/shared/services/note.service';
+import { NoteStore } from './store/notes.store';
 
 @Component({
   selector: 'app-notes',
@@ -46,6 +54,7 @@ import { NoteService } from 'src/app/shared/services/note.service';
     IonItem,
     IonLabel,
   ],
+  providers: [NoteStore],
 })
 export class NotesPage {
   public component = CreateNoteComponent;
@@ -56,13 +65,18 @@ export class NotesPage {
   isOverlayOpen = signal<boolean>(false);
   isClosingOverlay = signal<boolean>(false);
 
-  allNotes: Note[] = [];
+  allNotes: WritableSignal<Note[] | null> = signal(null);
   favoriteNotes: Note[] = [];
 
   noteService = inject(NoteService);
+  noteStore = inject(NoteStore);
 
   constructor() {
-    this.allNotes = this.noteService.getAllNotesByUserId();
+    effect(() => {
+      const notes = this.noteStore.getNotes()();
+      this.allNotes.set(this.noteStore.getNotes()());
+      console.log('allNotes:', notes);
+    });
     addIcons({
       add,
       documentTextOutline,
@@ -74,13 +88,18 @@ export class NotesPage {
 
   swipeCardAction($event: { noteId: string; action: SwipeCardAction }) {
     if ($event.action === SwipeCardAction.DELETE) {
-      // TODO
       this.deletingNoteId.set($event.noteId);
-      setTimeout(() => {
-        this.allNotes = this.allNotes.filter(
-          (note) => note.id !== $event.noteId
-        );
-      }, 500);
+      this.noteService.deleteNoteById($event.noteId).subscribe({
+        next: (res) => {
+          if (res) {
+            this.noteStore.deleteNoteById($event.noteId);
+          }
+        },
+      });
+      // setTimeout(() => {
+      //   this.allNotes =
+      //     this.allNotes?.filter((note) => note.id !== $event.noteId) ?? null;
+      // }, 500);
     } else if ($event.action === SwipeCardAction.OPEN) {
       this.router.navigate(['/edit-note', $event.noteId]);
     }

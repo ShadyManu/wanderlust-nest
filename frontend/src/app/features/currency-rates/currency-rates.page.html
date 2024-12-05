@@ -21,7 +21,10 @@
       class="flex flex-col flex-wrap overflow-x-scroll no-scrollbar h-[125px] px-4 py-0"
     >
       @for (country of filteredCountries(); track country) {
-      <div (click)="onCurrencyClick(country)">
+      <div
+        (click)="onCurrencyClick(country)"
+        (keydown)="onCurrencyClick(country)"
+      >
         <ion-button
           [color]="country.key === selectedFirstCountry()?.key || country.key === selectedSecondCountry()?.key ? 'success' : 'white'"
           class="w-[80px]"

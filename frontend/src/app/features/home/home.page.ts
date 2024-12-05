@@ -1,9 +1,9 @@
-import { IonContent } from '@ionic/angular/standalone';
+import { IonContent, IonRouterOutlet } from '@ionic/angular/standalone';
 import {
   HomeCard,
   HomeCardComponent,
 } from './../../shared/components/home-card/home-card.component';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 
@@ -13,7 +13,7 @@ import { HeaderComponent } from '../../shared/components/header/header.component
   styleUrls: ['home.page.scss'],
   imports: [HomeCardComponent, RouterModule, HeaderComponent, IonContent],
 })
-export class HomePage {
+export class HomePage implements OnInit {
   homeCards: HomeCard[] = [
     {
       icon: 'pulse',
@@ -31,5 +31,10 @@ export class HomePage {
       route: '/planner',
     },
   ];
-  constructor() {}
+
+  constructor(private routerOutlet: IonRouterOutlet) {}
+
+  ngOnInit(): void {
+    this.routerOutlet.swipeGesture = false;
+  }
 }

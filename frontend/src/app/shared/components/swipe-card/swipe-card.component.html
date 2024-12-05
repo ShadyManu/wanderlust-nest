@@ -35,8 +35,9 @@
       <div
         class="text-base items-center flex-grow opacity-60"
         (click)="openTriggered()"
+        (keydown)="openTriggered()"
       >
-        {{ note().title }}
+        {{ note().text }}
       </div>
 
       <!-- RIGHT ICON -->
@@ -44,6 +45,7 @@
         class="right-0 w-1/6 flex h-full justify-center items-center"
         [ngClass]="{ 'backdrop-blur-md': !!note().imageUrl }"
         (click)="deleteTriggered()"
+        (keydown)="deleteTriggered()"
       >
         <ion-icon
           slot="icon-only"

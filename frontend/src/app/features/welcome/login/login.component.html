@@ -1,0 +1,43 @@
+<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
+  <div class="flex flex-col items-center">
+    <h4 class="font-bold text-2xl mb-4">
+      {{ "welcome.login-page.title" | translate }}
+    </h4>
+    <p class="text-gray-500 mb-6">
+      {{ "welcome.login-page.description" | translate }}
+    </p>
+  </div>
+
+  <ion-input
+    [placeholder]="'welcome.login-page.email-placeholder' | translate"
+    type="email"
+    class="w-full mb-4"
+    [ngModel]="emailValue()"
+    (ngModelChange)="emailValue.set($event)"
+  ></ion-input>
+  <ion-input
+    [placeholder]="'welcome.login-page.password-placeholder' | translate"
+    type="password"
+    class="w-full mb-4"
+    [ngModel]="passwordValue()"
+    (ngModelChange)="passwordValue.set($event)"
+  ></ion-input>
+
+  <div class="text-right mb-6">
+    <a href="#" class="text-blue-500 hover:text-blue-700">{{
+      "welcome.login-page.forgot-password" | translate
+    }}</a>
+  </div>
+
+  <ion-button
+    expand="block"
+    class="font-bold py-2 px-4 mb-4"
+    (click)="login()"
+    (keydown)="login()"
+    [disabled]="isLoading() || isSubmitDisabled()"
+  >
+    @if(isLoading()) {
+    <ion-spinner></ion-spinner>
+    } @else { {{ "welcome.login-page.submit-button" | translate }} }
+  </ion-button>
+</ion-content>
