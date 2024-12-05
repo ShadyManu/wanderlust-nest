@@ -1,6 +1,11 @@
-import { Component, effect, inject, signal } from '@angular/core';
+import { Component, effect, inject, OnInit, signal } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { IonContent, IonButton, IonModal } from '@ionic/angular/standalone';
+import {
+  IonContent,
+  IonButton,
+  IonModal,
+  IonRouterOutlet,
+} from '@ionic/angular/standalone';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -18,15 +23,22 @@ import { GlobalStore } from 'src/app/shared/global-store/global.store';
     RegisterComponent,
     LoginComponent,
     TranslateModule,
+    IonRouterOutlet,
   ],
   providers: [ModalController, GlobalStore],
 })
-export class WelcomePage {
+export class WelcomePage implements OnInit {
   globalStore = inject(GlobalStore);
 
   logo = signal<string>(
     `../../../assets/logo-${this.globalStore.getLogo()}.png`
   );
+
+  private readonly routerOutlet = inject(IonRouterOutlet);
+
+  ngOnInit(): void {
+    this.routerOutlet.swipeGesture = false;
+  }
 
   constructor(public modalCtrl: ModalController) {
     effect(() => {

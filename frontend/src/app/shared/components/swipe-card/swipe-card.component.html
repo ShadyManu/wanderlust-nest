@@ -37,7 +37,7 @@
         (click)="openTriggered()"
         (keydown)="openTriggered()"
       >
-        {{ note().text }}
+        {{ trimHtml() ? stripHtml(note().text, 30) : note().text }}
       </div>
 
       <!-- RIGHT ICON -->

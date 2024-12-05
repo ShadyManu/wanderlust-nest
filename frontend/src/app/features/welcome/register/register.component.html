@@ -1,5 +1,10 @@
-<ion-content class="ion-padding" [scrollX]="false" [scrollY]="false">
-  <div class="flex flex-col items-center">
+<ion-content
+  class="ion-padding"
+  [scrollX]="false"
+  [scrollY]="false"
+  [color]="'light'"
+>
+  <div class="flex flex-col items-center my-6">
     <h4 class="text-2xl font-bold mb-4">
       {{ "welcome.signup-page.title" | translate }}
     </h4>
@@ -20,8 +25,26 @@
     type="password"
     [ngModel]="passwordValue()"
     (ngModelChange)="passwordValue.set($event)"
-    class="w-full mb-4"
+    class="w-full mb-1"
   />
+  <ion-list [inset]="false" class="bg-transparent mb-4">
+    @for (validator of validatorsKeys; track $index) {
+    <ion-item [color]="'light'" class="h-6 m-1 flex">
+      <ion-radio-group
+        [value]="passwordValidator[validator] ? 'success' : 'danger'"
+      >
+        <ion-radio
+          [ariaLabel]="passwordValidator[validator] ? 'success' : 'danger'"
+          [color]="passwordValidator[validator] ? 'success' : 'danger'"
+          [value]="passwordValidator[validator] ? 'success' : 'danger'"
+        ></ion-radio>
+      </ion-radio-group>
+      <ion-label class="ml-6">{{
+        "welcome.validators." + validator | translate
+      }}</ion-label>
+    </ion-item>
+    }
+  </ion-list>
 
   <p class="text-sm text-gray-400 mb-6">
     {{ "welcome.signup-page.terms-and-conditions" | translate }}

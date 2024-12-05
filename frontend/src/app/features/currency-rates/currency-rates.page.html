@@ -1,7 +1,7 @@
 <ion-content
   class="ion-padding"
   [scrollX]="false"
-  [scrollY]="false"
+  [scrollY]="true"
   [color]="'light'"
 >
   <app-header />
@@ -11,8 +11,9 @@
       <ion-searchbar
         [debounce]="300"
         (ionInput)="onSearch($event)"
+        [placeholder]="'currency-rates.searchbar-placeholder' | translate"
         class="pb-0"
-        [color]="'white'"
+        [color]="'light'"
       ></ion-searchbar>
     </div>
 
@@ -26,7 +27,7 @@
         (keydown)="onCurrencyClick(country)"
       >
         <ion-button
-          [color]="country.key === selectedFirstCountry()?.key || country.key === selectedSecondCountry()?.key ? 'success' : 'white'"
+          [color]="country.key === selectedFirstCountry()?.key || country.key === selectedSecondCountry()?.key ? 'success' : 'light'"
           class="w-[80px]"
           >{{country.key}}</ion-button
         >
@@ -48,8 +49,8 @@
 
     <!-- AMOUNT INPUT -->
     <div class="px-4">
-      <h1 class="text-2xl">Enter amount</h1>
-      <ion-item class="p-0">
+      <h1 class="text-2xl">{{ 'currency-rates.enter-amount' | translate }}</h1>
+      <ion-item class="p-0" [color]="'light'">
         <ion-input
           aria-label="Number input"
           type="number"
@@ -57,25 +58,33 @@
           [debounce]="500"
           (ionInput)="onInput($event)"
           [value]="firstCountryAmount()"
+          [color]="'light'"
+          [mode]="'ios'"
         />
       </ion-item>
     </div>
 
     <!-- CONVERTED AMOUNT -->
     <div class="px-4">
-      <h1 class="text-2xl">Converted amount</h1>
-      <ion-item class="p-0">
+      <h1 class="text-2xl">
+        {{ 'currency-rates.converted-amount' | translate }}
+      </h1>
+      <ion-item class="p-0" [color]="'light'">
         <ion-input
+          [color]="'light'"
           aria-label="Converted amount"
           [disabled]="true"
           [value]="conversionResult() ? conversionResult() + ' ' + selectedSecondCountry()!.symbol : null"
+          [mode]="'ios'"
         />
       </ion-item>
     </div>
 
     <!-- CONVERSION RATE -->
     <div class="px-4">
-      <h1 class="text-2xl">Conversion rate</h1>
+      <h1 class="text-2xl">
+        {{ 'currency-rates.conversion-rate' | translate }}
+      </h1>
       @if (currencyRate() !== null) {
       <h1 class="text-2xl">
         {{ '\u200E1 ' + selectedFirstCountry()!.key }} = {{ currencyRate() + ' '

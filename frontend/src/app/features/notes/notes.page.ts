@@ -2,6 +2,7 @@ import {
   Component,
   effect,
   inject,
+  OnInit,
   signal,
   ViewEncapsulation,
   WritableSignal,
@@ -15,6 +16,7 @@ import {
   IonAccordion,
   IonItem,
   IonLabel,
+  IonRouterOutlet,
 } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { addIcons } from 'ionicons';
@@ -53,10 +55,11 @@ import { NoteStore } from './store/notes.store';
     IonAccordion,
     IonItem,
     IonLabel,
+    IonRouterOutlet,
   ],
   providers: [NoteStore],
 })
-export class NotesPage {
+export class NotesPage implements OnInit {
   public component = CreateNoteComponent;
 
   deletingNoteId = signal<string | null>(null);
@@ -68,8 +71,14 @@ export class NotesPage {
   allNotes: WritableSignal<Note[] | null> = signal(null);
   favoriteNotes: Note[] = [];
 
-  noteService = inject(NoteService);
-  noteStore = inject(NoteStore);
+  private readonly noteService = inject(NoteService);
+  readonly noteStore = inject(NoteStore);
+
+  private readonly routerOutlet = inject(IonRouterOutlet);
+
+  ngOnInit(): void {
+    this.routerOutlet.swipeGesture = true;
+  }
 
   constructor() {
     effect(() => {

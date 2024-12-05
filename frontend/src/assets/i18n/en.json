@@ -17,6 +17,19 @@
       "password-placeholder": "Password",
       "forgot-password": "Forgot password?",
       "submit-button": "LOGIN"
+    },
+    "validators": {
+      "uppercase": "At least one uppercase letter",
+      "lowercase": "At least one lowercase letter",
+      "number": "At least one number",
+      "special": "At least one special character",
+      "minLength": "Must be at least 8 characters"
     }
+  },
+  "currency-rates": {
+    "searchbar-placeholder": "Search for a currency",
+    "enter-amount": "Enter amount",
+    "converted-amount": "Converted amount",
+    "conversion-rate": "Conversion rate"
   }
 }

@@ -2,6 +2,7 @@ import {
   Component,
   effect,
   inject,
+  OnInit,
   signal,
   WritableSignal,
 } from '@angular/core';
@@ -13,6 +14,7 @@ import {
   IonSearchbar,
   IonItem,
   IonInput,
+  IonRouterOutlet,
 } from '@ionic/angular/standalone';
 import {
   IonInputCustomEvent,
@@ -26,23 +28,26 @@ import { appCountries } from 'src/app/shared/constants/countries.constants';
 import { CurrencyRateService } from 'src/app/shared/services/currency-rate.service';
 import { AppCountries } from 'src/app/shared/types/country.types';
 import { HeaderComponent } from '../../shared/components/header/header.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-currency-rates',
-    templateUrl: './currency-rates.page.html',
-    styleUrls: ['./currency-rates.page.scss'],
-    imports: [
-        IonInput,
-        IonItem,
-        IonSearchbar,
-        IonButton,
-        IonIcon,
-        IonText,
-        IonContent,
-        HeaderComponent,
-    ]
+  selector: 'app-currency-rates',
+  templateUrl: './currency-rates.page.html',
+  styleUrls: ['./currency-rates.page.scss'],
+  imports: [
+    IonInput,
+    IonItem,
+    IonSearchbar,
+    IonButton,
+    IonIcon,
+    IonText,
+    IonContent,
+    HeaderComponent,
+    TranslateModule,
+    IonRouterOutlet,
+  ],
 })
-export class CurrencyRatesPage {
+export class CurrencyRatesPage implements OnInit {
   // TODO: retrieve countries from backend
   readonly defaultCountries = Object.values(appCountries);
 
@@ -56,7 +61,13 @@ export class CurrencyRatesPage {
   public conversionResult = signal<string | null>(null);
   public currencyRate = signal<number | null>(null);
 
-  private currencyRateService = inject(CurrencyRateService);
+  private readonly currencyRateService = inject(CurrencyRateService);
+
+  private readonly routerOutlet = inject(IonRouterOutlet);
+
+  ngOnInit(): void {
+    this.routerOutlet.swipeGesture = true;
+  }
 
   constructor() {
     addIcons({ arrowForwardOutline, arrowForward });

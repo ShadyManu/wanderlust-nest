@@ -49,7 +49,14 @@ public static class InfrastructureDependencyInjection
             .AddBearerToken(IdentityConstants.BearerScheme);
         services.AddAuthorizationBuilder();
         services
-            .AddIdentityCore<User>()
+            .AddIdentityCore<User>(opt =>
+            {
+                opt.Password.RequireDigit = true;
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequireUppercase = false;
+                opt.Password.RequireLowercase = false;
+            })
             .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddApiEndpoints();

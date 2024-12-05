@@ -16,6 +16,10 @@ export function responseInterceptor(
       if (event.type === HttpEventType.Response) {
         const response = event.body as Result<any>;
 
+        if (event.status === 200 && !response) {
+          return event.clone({ body: true });
+        }
+
         if (!!response.data) {
           return event.clone({ body: response.data });
         }

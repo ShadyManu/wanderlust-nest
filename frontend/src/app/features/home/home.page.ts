@@ -3,7 +3,7 @@ import {
   HomeCard,
   HomeCardComponent,
 } from './../../shared/components/home-card/home-card.component';
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 
@@ -32,7 +32,7 @@ export class HomePage implements OnInit {
     },
   ];
 
-  constructor(private routerOutlet: IonRouterOutlet) {}
+  routerOutlet = inject(IonRouterOutlet);
 
   ngOnInit(): void {
     this.routerOutlet.swipeGesture = false;

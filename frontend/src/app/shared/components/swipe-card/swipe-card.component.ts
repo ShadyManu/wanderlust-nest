@@ -4,6 +4,7 @@ import { Component, input, output, signal } from '@angular/core';
 import { addIcons } from 'ionicons';
 import { openOutline, trashOutline } from 'ionicons/icons';
 import { Note } from '../../types/note.types';
+import { stripHTML } from '../../helpers/string';
 
 @Component({
   selector: 'app-swipe-card',
@@ -12,6 +13,8 @@ import { Note } from '../../types/note.types';
   imports: [CommonModule, IonIcon, IonRippleEffect],
 })
 export class SwipeCardComponent {
+  trimHtml = input<boolean>(true);
+  stripHtml = stripHTML;
   note = input.required<Note>();
 
   showDeleteIcon = signal<boolean>(true);
