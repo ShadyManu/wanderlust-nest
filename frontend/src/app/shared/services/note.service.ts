@@ -9,8 +9,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class NoteService {
-  private http = inject(HttpClient);
-  private noteEndpoint = environment.apiUrl + '/api/notes';
+  private readonly http = inject(HttpClient);
+  private readonly noteEndpoint = environment.apiUrl + '/api/notes';
 
   public getAllNotesByUserId(): Observable<Note[]> {
     return this.http.get<Note[]>(this.noteEndpoint);
@@ -25,6 +25,6 @@ export class NoteService {
   }
 
   public updateNote(updatedNote: UpdateNoteDto): Observable<boolean> {
-    return this.http.put<boolean>(this.noteEndpoint, updatedNote);
+    return this.http.patch<boolean>(this.noteEndpoint, updatedNote);
   }
 }

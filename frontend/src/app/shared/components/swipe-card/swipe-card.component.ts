@@ -54,11 +54,13 @@ export class SwipeCardComponent {
       target.nodeName === 'ION-ICON'
         ? target.getAttribute('name')
         : (target.firstChild as HTMLElement).getAttribute('name');
-    if (currentX - this.startX > 0 && iconName === this.deleteIcon) {
-      return;
-    } else if (currentX - this.startX < 0 && iconName === this.openIcon) {
+    if (
+      (currentX - this.startX > 0 && iconName === this.deleteIcon) ||
+      (currentX - this.startX < 0 && iconName === this.openIcon)
+    ) {
       return;
     }
+
     this.scrollY.emit(false);
     this.translateX = currentX - this.startX;
 

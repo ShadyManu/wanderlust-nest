@@ -6,6 +6,7 @@ import { AppPage } from './shared/types/layout.types';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { GlobalStore } from './shared/global-store/global.store';
 import { AuthService } from './shared/services/auth.service';
+import { ToastComponent } from './shared/components/toast/toast.component';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,11 @@ import { AuthService } from './shared/services/auth.service';
     @if (!isAppLoading()) {
     <ion-app>
       <ion-router-outlet></ion-router-outlet>
+      <app-toast />
     </ion-app>
     }
   `,
-  imports: [IonApp, IonRouterOutlet, TranslateModule],
+  imports: [IonApp, IonRouterOutlet, TranslateModule, ToastComponent],
   providers: [GlobalStore],
 })
 export class AppComponent implements OnInit {
@@ -27,7 +29,7 @@ export class AppComponent implements OnInit {
 
   isAppLoading = signal<boolean>(true);
 
-  constructor(private translate: TranslateService) {
+  constructor(private readonly translate: TranslateService) {
     const defaultLanguage = localStorage.getItem('language') ?? 'en';
 
     this.translate.addLangs(['it', 'en', 'es']);

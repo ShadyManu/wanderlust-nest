@@ -20,32 +20,46 @@ const initialState: NoteState = {
   notes: [],
 };
 
+const sortNotesByDate = (notes: Note[]): Note[] =>
+  notes
+    .slice()
+    .sort(
+      (a, b) =>
+        new Date(b.lastModified).getTime() - new Date(a.lastModified).getTime()
+    );
+
 export const NoteStore = signalStore(
-  // { providedIn: 'root' },
+  { providedIn: 'root' },
   withState(initialState),
   withComputed(({ notes }) => ({
     getNotes: computed(() => notes),
-    getNoteById: computed(
-      () => (id: string) => notes().find((note) => note.id === id)
-    ),
   })),
   withMethods((store) => ({
     addNote(note: Note): void {
-      patchState(store, (state) => ({ notes: [...state.notes, note] }));
+      const notes = [...store.notes(), note];
+      const sortedNotesByModifiedDate = sortNotesByDate(notes);
+      patchState(store, { notes: sortedNotesByModifiedDate });
     },
     loadNotes(notes: Note[]): void {
       patchState(store, { notes });
     },
     updateNote(note: Note): void {
-      patchState(store, (state) => ({
-        notes: state.notes.map((n) => (n.id === note.id ? note : n)),
-      }));
+      const updatedNotes = store
+        .notes()
+        .map((n) => (n.id === note.id ? note : n));
+      const sortedNotesByModifiedDate = sortNotesByDate(updatedNotes);
+      patchState(store, { notes: sortedNotesByModifiedDate });
     },
     deleteNoteById(id: string): void {
       patchState(store, (state) => ({
         notes: state.notes.filter((note) => note.id !== id),
       }));
     },
+    getNoteById:
+      () =>
+      (id: string): Note | null => {
+        return store.notes().find((note) => note.id === id) ?? null;
+      },
   })),
   withHooks({
     onInit(store) {

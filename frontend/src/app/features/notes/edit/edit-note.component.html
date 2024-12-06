@@ -8,24 +8,20 @@
     <app-header />
     <div class="flex flex-col justify-between gap-8 flex-grow">
       <div class="min-h-96 w-full flex-grow text-black">
-        <tiptap-editor
+        <app-text-editor
+          (hasTextChangedFromStart)="isSaveDisabled.set($event)"
+          (outputValue)="textValue.set($event)"
+          [retrievedNote]="retrievedNote"
           [editor]="editor"
-          [(ngModel)]="value"
-          class="flex h-full w-full"
-          (ngModelChange)="onModelChange($event)"
         />
-        <tiptap-bubble-menu [editor]="editor">
-          <!-- Anything that should be rendered inside bubble menu -->
-          prova bubble menu
-        </tiptap-bubble-menu>
       </div>
 
       <ion-button
         class="w-full h-8 pb-16"
         [disabled]="isSaveDisabled()"
         [color]="'warning'"
-        (click)="onSaveClick()"
-        (keydown)="onSaveClick()"
+        (click)="onEditSaveClick()"
+        (keydown)="onEditSaveClick()"
       >
         <ion-label>
           @if(isLoading()) {

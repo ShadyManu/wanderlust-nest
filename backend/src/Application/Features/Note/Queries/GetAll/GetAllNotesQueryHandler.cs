@@ -12,7 +12,9 @@ public class GetAllNotesQueryHandler(IApplicationDbContext context) : IQueryHand
 {
     public async Task<Result<List<NoteDto>>> Handle(GetAllNotesQuery request, CancellationToken cancellationToken)
     {
-        var entities = await context.Notes.ToListAsync();
+        var entities = await context.Notes
+            .OrderByDescending(e => e.LastModified)
+            .ToListAsync(cancellationToken);
         return Result<List<NoteDto>>.Success(entities.Adapt<List<NoteDto>>());
     }
 }

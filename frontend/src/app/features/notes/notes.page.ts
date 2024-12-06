@@ -4,7 +4,6 @@ import {
   inject,
   OnInit,
   signal,
-  ViewEncapsulation,
   WritableSignal,
 } from '@angular/core';
 import {
@@ -28,7 +27,7 @@ import {
   trashOutline,
 } from 'ionicons/icons';
 import { Router, RouterModule } from '@angular/router';
-import { CreateNoteComponent } from 'src/app/shared/components/create-note/create-note.component';
+import { CreateNoteComponent } from 'src/app/features/notes/create/create-note.component';
 import { CommonModule } from '@angular/common';
 import {
   SwipeCardAction,
@@ -55,9 +54,8 @@ import { NoteStore } from './store/notes.store';
     IonAccordion,
     IonItem,
     IonLabel,
-    IonRouterOutlet,
   ],
-  providers: [NoteStore],
+  providers: [],
 })
 export class NotesPage implements OnInit {
   public component = CreateNoteComponent;
@@ -100,17 +98,13 @@ export class NotesPage implements OnInit {
       this.deletingNoteId.set($event.noteId);
       this.noteService.deleteNoteById($event.noteId).subscribe({
         next: (res) => {
-          if (res) {
-            this.noteStore.deleteNoteById($event.noteId);
-          }
+          if (!res) return;
+
+          this.noteStore.deleteNoteById($event.noteId);
         },
       });
-      // setTimeout(() => {
-      //   this.allNotes =
-      //     this.allNotes?.filter((note) => note.id !== $event.noteId) ?? null;
-      // }, 500);
     } else if ($event.action === SwipeCardAction.OPEN) {
-      this.router.navigate(['/edit-note', $event.noteId]);
+      this.router.navigate(['/notes/edit-note', $event.noteId]);
     }
   }
 

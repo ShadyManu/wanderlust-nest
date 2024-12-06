@@ -6,7 +6,7 @@ import { HeaderComponent } from '../../shared/components/header/header.component
   selector: 'app-planner',
   templateUrl: './planner.page.html',
   styleUrls: ['./planner.page.scss'],
-  imports: [IonContent, HeaderComponent, IonRouterOutlet],
+  imports: [IonContent, HeaderComponent],
 })
 export class PlannerPage implements OnInit {
   private readonly routerOutlet = inject(IonRouterOutlet);

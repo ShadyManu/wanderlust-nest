@@ -23,9 +23,8 @@ import { GlobalStore } from 'src/app/shared/global-store/global.store';
     RegisterComponent,
     LoginComponent,
     TranslateModule,
-    IonRouterOutlet,
   ],
-  providers: [ModalController, GlobalStore],
+  providers: [ModalController],
 })
 export class WelcomePage implements OnInit {
   globalStore = inject(GlobalStore);

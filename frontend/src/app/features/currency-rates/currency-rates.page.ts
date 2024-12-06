@@ -44,7 +44,6 @@ import { TranslateModule } from '@ngx-translate/core';
     IonContent,
     HeaderComponent,
     TranslateModule,
-    IonRouterOutlet,
   ],
 })
 export class CurrencyRatesPage implements OnInit {

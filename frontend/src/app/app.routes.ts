@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomePage } from './features/home/home.page';
 import { authGuard } from './shared/guards/auth.guard';
-import { WelcomePage } from './features/welcome/welcome.page';
+import { CreateNoteComponent } from './features/notes/create/create-note.component';
+import { NOTES_ROUTES } from './features/notes/notes.routes';
 
 export const routes: Routes = [
   {
@@ -30,14 +31,22 @@ export const routes: Routes = [
   },
   {
     path: 'notes',
-    loadComponent: () =>
-      import('./features/notes/notes.page').then((m) => m.NotesPage),
+    loadChildren: () => NOTES_ROUTES,
     canActivate: [authGuard],
+    // children: [
+    //   {
+    //     path: 'create-note',
+    //     loadComponent: () =>
+    //       import('./features/notes/create/create-note.component').then(
+    //         (m) => m.CreateNoteComponent
+    //       ),
+    //   },
+    // ],
   },
   {
     path: 'create-note',
     loadComponent: () =>
-      import('./shared/components/create-note/create-note.component').then(
+      import('./features/notes/create/create-note.component').then(
         (m) => m.CreateNoteComponent
       ),
     canActivate: [authGuard],
@@ -45,7 +54,7 @@ export const routes: Routes = [
   {
     path: 'edit-note/:id',
     loadComponent: () =>
-      import('./shared/components/create-note/create-note.component').then(
+      import('./features/notes/create/create-note.component').then(
         (m) => m.CreateNoteComponent
       ),
     canActivate: [authGuard],

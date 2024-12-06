@@ -13,7 +13,7 @@ type GlobalState = {
 };
 
 const initialState: GlobalState = {
-  language: 'en',
+  language: '',
   logo: `../../../assets/logo-{language}.png`,
 };
 
@@ -21,7 +21,6 @@ export const GlobalStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
   withComputed((store) => ({
-    // TODO: not working properly
     getLogo: computed(() =>
       store.logo().includes('{language}')
         ? store.logo().replace('{language}', store.language())
