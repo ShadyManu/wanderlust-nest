@@ -15,6 +15,7 @@ public class GetAllNotesQueryHandler(IApplicationDbContext context) : IQueryHand
         var entities = await context.Notes
             .OrderByDescending(e => e.LastModified)
             .ToListAsync(cancellationToken);
+        
         return Result<List<NoteDto>>.Success(entities.Adapt<List<NoteDto>>());
     }
 }

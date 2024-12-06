@@ -32,7 +32,12 @@ export const NoteStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
   withComputed(({ notes }) => ({
-    getNotes: computed(() => notes),
+    getAllNotes: computed(() =>
+      sortNotesByDate(notes().filter((note) => !note.isFavourite))
+    ),
+    getFavouriteNotes: computed(() =>
+      sortNotesByDate(notes().filter((note) => note.isFavourite))
+    ),
   })),
   withMethods((store) => ({
     addNote(note: Note): void {

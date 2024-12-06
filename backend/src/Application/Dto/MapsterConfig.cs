@@ -23,6 +23,7 @@ public static class MapsterConfig
         TypeAdapterConfig<NoteEntity, NoteDto>.NewConfig()
             .Map(dest => dest.Id, src => src.Id)
             .Map(dest => dest.Text, src => src.Text)
+            .Map(dest => dest.IsFavourite, src => src.IsFavourite)
             .Map(dest => dest.LastModified, src => src.LastModified.ToString());
         TypeAdapterConfig<NoteEntity, CreateNoteDto>.NewConfig();
     }

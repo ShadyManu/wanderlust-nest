@@ -5,19 +5,19 @@ using Mapster;
 
 namespace Application.Features.Note.Commands.Update;
 
-public record UpdateNoteCommand(UpdateNoteDto UpdatedNote) : ICommand<bool>;
+public record UpdateNoteCommand(UpdateNoteDto UpdatedNote) : ICommand<NoteDto>;
 
-public class UpdateNoteCommandHandler(IApplicationDbContext context) : ICommandHandler<UpdateNoteCommand, bool>
+public class UpdateNoteCommandHandler(IApplicationDbContext context) : ICommandHandler<UpdateNoteCommand, NoteDto>
 {
-    public async Task<Result<bool>> Handle(UpdateNoteCommand request, CancellationToken cancellationToken)
+    public async Task<Result<NoteDto>> Handle(UpdateNoteCommand request, CancellationToken cancellationToken)
     {
         var noteToEdit = await context.Notes.FindAsync(request.UpdatedNote.NoteId);
-        if (noteToEdit is null) return Result<bool>.Failure("Note not found");
+        if (noteToEdit is null) return Result<NoteDto>.Failure("Note not found");
         
         request.UpdatedNote.Adapt(noteToEdit);
         
         var result = await context.SaveChangesAsync(cancellationToken);
         
-        return result > 0 ? Result<bool>.Success(true) : Result<bool>.Failure("Error");
+        return result > 0 ? Result<NoteDto>.Success(noteToEdit.Adapt<NoteDto>()) : Result<NoteDto>.Failure("Error");
     }
 }

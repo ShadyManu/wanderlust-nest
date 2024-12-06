@@ -15,5 +15,9 @@ public class NoteEntityConfiguration : BaseEntityConfiguration<NoteEntity>
 
         builder.Property(e => e.Text)
             .IsRequired(true);
+        
+        builder.Property(e => e.IsFavourite)
+            .IsRequired(true)
+            .HasDefaultValue(false);
     }
 }

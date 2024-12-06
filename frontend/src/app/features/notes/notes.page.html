@@ -13,61 +13,115 @@
       [mode]="'ios'"
       class="mx-0"
       [multiple]="true"
-      [value]="favoriteNotes && favoriteNotes.length > 0 ? ['all-expanded'] : []"
+      [value]="noteStore.getFavouriteNotes().length > 0 ? ['all-expanded'] : []"
     >
       <ion-accordion
         value="first"
         [toggleIcon]="'chevron-down-outline'"
         value="all-expanded"
+        class="bg-transparent"
       >
         <ion-item slot="header" color="white">
           <ion-label>Favourites</ion-label>
         </ion-item>
         <div class="flex flex-col" slot="content">
-          @for (note of favoriteNotes; track note) {
-          <app-swipe-card
-            [note]="note"
-            (scrollY)="setScrollY($event)"
-            (swipeCardOutput)="swipeCardAction($event)"
-            [class.fade-out-card]="deletingNoteId() === note.id"
-          />
-          }
+          <ion-list [inset]="false" class="bg-transparent" [lines]="'none'">
+            @for (note of noteStore.getFavouriteNotes(); track note) {
+            <ion-item-sliding>
+              <ion-item-options
+                side="start"
+                (click)="putNoteToFavourites(note)"
+                (onKeyDown)="putNoteToFavourites(note)"
+              >
+                <ion-item-option color="warning">
+                  <ion-icon slot="icon-only" name="close" />
+                </ion-item-option>
+              </ion-item-options>
+
+              <ion-item
+                [color]="'light'"
+                (click)="swipeCardAction(note.id, 'open')"
+                (onKeyDown)="swipeCardAction(note.id, 'open')"
+                class="ion-activatable ripple-parent rounded-rectangle"
+              >
+                <ion-ripple-effect />
+                <ion-label>{{ stripHTML(note.text, 30) }}</ion-label>
+              </ion-item>
+
+              <ion-item-options
+                side="end"
+                (click)="swipeCardAction(note.id, 'delete')"
+                (onKeyDown)="swipeCardAction(note.id, 'delete')"
+              >
+                <ion-item-option color="danger">
+                  <ion-icon slot="icon-only" name="trash" />
+                </ion-item-option>
+              </ion-item-options>
+            </ion-item-sliding>
+            }
+          </ion-list>
         </div>
       </ion-accordion>
     </ion-accordion-group>
   </div>
 
-  @if (allNotes()) {
   <div class="flex flex-col w-full box-border gap-4">
     <ion-accordion-group
       expand="inset"
       [mode]="'ios'"
       class="mx-0"
       [multiple]="true"
-      [value]="!!allNotes() && allNotes()!.length > 0 ? ['all-expanded'] : []"
+      [value]="noteStore.getAllNotes().length > 0 ? ['all-expanded'] : []"
     >
       <ion-accordion
         value="first"
         [toggleIcon]="'chevron-down-outline'"
         value="all-expanded"
+        class="bg-transparent"
       >
-        <ion-item slot="header" color="white">
+        <ion-item slot="header" [color]="'light'">
           <ion-label>All</ion-label>
         </ion-item>
         <div class="flex flex-col" slot="content">
-          @for (note of noteStore.getNotes()(); track note) {
-          <app-swipe-card
-            [note]="note"
-            (scrollY)="setScrollY($event)"
-            (swipeCardOutput)="swipeCardAction($event)"
-            [class.fade-out-card]="deletingNoteId() === note.id"
-          />
-          }
+          <ion-list [inset]="false" class="bg-transparent" [lines]="'none'">
+            @for (note of noteStore.getAllNotes(); track note) {
+            <ion-item-sliding>
+              <ion-item-options
+                side="start"
+                (click)="putNoteToFavourites(note)"
+                (onKeyDown)="putNoteToFavourites(note)"
+              >
+                <ion-item-option color="warning">
+                  <ion-icon slot="icon-only" name="pin" />
+                </ion-item-option>
+              </ion-item-options>
+
+              <ion-item
+                [color]="'light'"
+                (click)="swipeCardAction(note.id, 'open')"
+                (onKeyDown)="swipeCardAction(note.id, 'open')"
+                class="ion-activatable ripple-parent rounded-rectangle"
+              >
+                <ion-ripple-effect />
+                <ion-label>{{ stripHTML(note.text, 30) }}</ion-label>
+              </ion-item>
+
+              <ion-item-options
+                side="end"
+                (click)="swipeCardAction(note.id, 'delete')"
+                (onKeyDown)="swipeCardAction(note.id, 'delete')"
+              >
+                <ion-item-option color="danger">
+                  <ion-icon slot="icon-only" name="trash" />
+                </ion-item-option>
+              </ion-item-options>
+            </ion-item-sliding>
+            }
+          </ion-list>
         </div>
       </ion-accordion>
     </ion-accordion-group>
   </div>
-  }
 
   <ion-fab
     slot="fixed"

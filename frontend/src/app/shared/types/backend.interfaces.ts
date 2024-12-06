@@ -15,6 +15,7 @@ export interface CreateNoteDto {
 export interface UpdateNoteDto {
   noteId: string;
   text: string;
+  isFavourite: boolean;
 }
 
 export interface LoginResponse {

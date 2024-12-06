@@ -4,6 +4,7 @@ import {
   calendarOutline,
   pulseOutline,
   documentTextOutline,
+  logOutOutline,
 } from 'ionicons/icons';
 import { addIcons } from 'ionicons';
 
@@ -17,12 +18,17 @@ export class HomeCardComponent {
   public homeCard = input.required<HomeCard>();
 
   constructor() {
-    addIcons({ calendarOutline, pulseOutline, documentTextOutline });
+    addIcons({
+      calendarOutline,
+      pulseOutline,
+      documentTextOutline,
+      'log-out-outline': logOutOutline,
+    });
   }
 }
 
 export interface HomeCard {
-  icon: 'pulse' | 'document-text' | 'calendar'; // https://ionic.io/ionicons
+  icon: 'pulse' | 'document-text' | 'calendar' | 'log-out'; // https://ionic.io/ionicons
   text: string;
   route: `/${string}`;
 }

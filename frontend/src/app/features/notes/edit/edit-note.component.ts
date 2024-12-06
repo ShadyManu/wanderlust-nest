@@ -62,6 +62,7 @@ export class EditNoteComponent implements OnInit {
     const updatedNote: UpdateNoteDto = {
       noteId: this.id(),
       text: this.textValue(),
+      isFavourite: this.retrievedNote?.isFavourite ?? false,
     };
 
     this.noteService.updateNote(updatedNote).subscribe({
@@ -71,6 +72,7 @@ export class EditNoteComponent implements OnInit {
         const newNote: Note = {
           id: updatedNote.noteId,
           text: updatedNote.text,
+          isFavourite: updatedNote.isFavourite,
           lastModified: new Date().toISOString(),
         };
         this.noteStore.updateNote(newNote);

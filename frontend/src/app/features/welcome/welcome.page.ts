@@ -36,6 +36,8 @@ export class WelcomePage implements OnInit {
   private readonly routerOutlet = inject(IonRouterOutlet);
 
   ngOnInit(): void {
+    // TODO clear phone storage
+    localStorage.clear();
     this.routerOutlet.swipeGesture = false;
   }
 

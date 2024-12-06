@@ -30,6 +30,11 @@ export class HomePage implements OnInit {
       text: 'Planner',
       route: '/planner',
     },
+    {
+      icon: 'log-out',
+      text: 'Logout',
+      route: '/welcome',
+    },
   ];
 
   routerOutlet = inject(IonRouterOutlet);
