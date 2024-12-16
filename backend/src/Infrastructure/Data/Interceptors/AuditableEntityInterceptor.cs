@@ -26,6 +26,7 @@ public class AuditableEntityInterceptor(TimeProvider timeProvider, IUser user) :
     private void UpdateEntities(DbContext? context)
     {
         if (context is null) return;
+        if (user.Id is null) return;
 
         foreach (var entry in context.ChangeTracker.Entries<IAuditableEntity>())
         {
@@ -34,10 +35,10 @@ public class AuditableEntityInterceptor(TimeProvider timeProvider, IUser user) :
                 var utcNow = timeProvider.GetUtcNow();
                 if (entry.State == EntityState.Added)
                 {
-                    entry.Entity.CreatedBy = user.Id;
+                    entry.Entity.CreatedBy = (Guid)user.Id;
                     entry.Entity.Created = utcNow;
                 }
-                entry.Entity.LastModifiedBy = user.Id;
+                entry.Entity.LastModifiedBy = (Guid)user.Id;
                 entry.Entity.LastModified = utcNow;
             }
         }

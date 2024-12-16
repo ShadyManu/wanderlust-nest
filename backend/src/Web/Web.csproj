@@ -9,6 +9,8 @@
 	<RootNamespace>WanderlustNest.Web</RootNamespace>
 	<AssemblyName>WanderlustNest.Web</AssemblyName>
 	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  
+    <AssemblyName>Web</AssemblyName>
   </PropertyGroup>
 
 	<ItemGroup>

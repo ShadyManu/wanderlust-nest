@@ -1,4 +1,5 @@
 using Application.Commons.Interfaces;
+using Application.Commons.Interfaces.Repositories;
 using Application.Commons.Result;
 using Application.Dto.Todo;
 using Domain.Entities;
@@ -6,16 +7,18 @@ using Mapster;
 
 namespace Application.Features.ToDo.Commands.Create;
 
-public sealed record CreateTodoCommand(CreateTodoDto CreateTodoDto) : ICommand<bool>;
+public sealed record CreateTodoCommand(CreateTodoDto CreateTodoDto) : ICommand<TodoDto>;
 
-internal sealed class CreateTodoCommandHandler(IApplicationDbContext context) : ICommandHandler<CreateTodoCommand, bool>
+internal sealed class CreateTodoCommandHandler(ITodoRepository repository) : ICommandHandler<CreateTodoCommand, TodoDto>
 {
-    public async Task<Result<bool>> Handle(CreateTodoCommand command, CancellationToken cancellationToken)
+    public async Task<Result<TodoDto>> Handle(CreateTodoCommand command, CancellationToken cancellationToken)
     {
         var entity = command.CreateTodoDto.Adapt<TodoEntity>();
         
-        await context.Todos.AddAsync(entity, cancellationToken);
-        var result = await context.SaveChangesAsync(cancellationToken);
-        return Result<bool>.Success(result > 0);
+        var result = await repository.AddAsync(entity, cancellationToken);
+
+        return result == 0 
+            ? Result<TodoDto>.Failure("Failed to create Todo.") 
+            : Result<TodoDto>.Success(entity.Adapt<TodoDto>());
     }
 }

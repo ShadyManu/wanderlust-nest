@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Data.Configurations;
 
-public class NoteEntityConfiguration : BaseEntityConfiguration<NoteEntity>
+public class NoteEntityConfiguration : AuditableEntityConfiguration<NoteEntity>
 {
     public override void Configure(EntityTypeBuilder<NoteEntity> builder)
     {

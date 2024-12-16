@@ -20,6 +20,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{68C5D357-C192-4079-AC7C-A91B3B7E4129}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{963FC8EE-3DAD-43E6-A384-50FFDEC270C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "Application.UnitTests\Application.UnitTests.csproj", "{F90CCD01-6A8A-4D60-BF1B-06116BA74341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.IntegrationTests", "Application.IntegrationTests\Application.IntegrationTests.csproj", "{1041B27E-4974-474D-8C5E-A8CDCF0C3A8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +56,14 @@ Global
 		{68C5D357-C192-4079-AC7C-A91B3B7E4129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68C5D357-C192-4079-AC7C-A91B3B7E4129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68C5D357-C192-4079-AC7C-A91B3B7E4129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90CCD01-6A8A-4D60-BF1B-06116BA74341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90CCD01-6A8A-4D60-BF1B-06116BA74341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90CCD01-6A8A-4D60-BF1B-06116BA74341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90CCD01-6A8A-4D60-BF1B-06116BA74341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1041B27E-4974-474D-8C5E-A8CDCF0C3A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1041B27E-4974-474D-8C5E-A8CDCF0C3A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1041B27E-4974-474D-8C5E-A8CDCF0C3A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1041B27E-4974-474D-8C5E-A8CDCF0C3A8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +74,7 @@ Global
 		{D6304494-D37F-405D-8598-07D4F66FCC77} = {347789B6-5856-4B17-8540-49521D167AD7}
 		{35611CCB-47CF-44B1-8FCF-D5ED13ECC3C0} = {347789B6-5856-4B17-8540-49521D167AD7}
 		{68C5D357-C192-4079-AC7C-A91B3B7E4129} = {347789B6-5856-4B17-8540-49521D167AD7}
+		{F90CCD01-6A8A-4D60-BF1B-06116BA74341} = {963FC8EE-3DAD-43E6-A384-50FFDEC270C0}
+		{1041B27E-4974-474D-8C5E-A8CDCF0C3A8C} = {963FC8EE-3DAD-43E6-A384-50FFDEC270C0}
 	EndGlobalSection
 EndGlobal

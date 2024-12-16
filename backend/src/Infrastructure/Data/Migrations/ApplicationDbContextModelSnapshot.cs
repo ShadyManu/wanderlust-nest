@@ -22,6 +22,63 @@ namespace Infrastructure.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Domain.Entities.FileResourceEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("ActivityEntityId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("EntityId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("EntityType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FileExtension")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<long>("FileSize")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("FileType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset?>("LastModified")
+                        .IsRequired()
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("LastModifiedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActivityEntityId");
+
+                    b.ToTable("FileResources", "app");
+                });
+
             modelBuilder.Entity("Domain.Entities.NoteEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -31,7 +88,8 @@ namespace Infrastructure.Data.Migrations
                     b.Property<DateTimeOffset>("Created")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid?>("CreatedBy")
+                    b.Property<Guid>("CreatedBy")
+                        .HasMaxLength(50)
                         .HasColumnType("uuid");
 
                     b.Property<bool>("IsFavourite")
@@ -40,9 +98,11 @@ namespace Infrastructure.Data.Migrations
                         .HasDefaultValue(false);
 
                     b.Property<DateTimeOffset?>("LastModified")
+                        .IsRequired()
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid?>("LastModifiedBy")
+                    b.Property<Guid>("LastModifiedBy")
+                        .HasMaxLength(50)
                         .HasColumnType("uuid");
 
                     b.Property<string>("Text")
@@ -54,6 +114,199 @@ namespace Infrastructure.Data.Migrations
                     b.ToTable("Notes", "app");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Planner.ActivityEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("ActivityType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("AdditionalNotes")
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("LastModified")
+                        .IsRequired()
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("LastModifiedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Link")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("PlaceId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Recommendations")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlaceId");
+
+                    b.ToTable("Activities", "app");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.CityEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CountryFullName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("CountryThreeLetters")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("FamousDishesPipe")
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset?>("LastModified")
+                        .IsRequired()
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("LastModifiedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<double>("Latitude")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("LocalCurrency")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LocalCurrencySymbol")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<double>("Longitude")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name", "CountryThreeLetters")
+                        .IsUnique();
+
+                    b.ToTable("Cities", "app");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.PlaceEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("CityId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("LastModified")
+                        .IsRequired()
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("LastModifiedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("TripId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CityId");
+
+                    b.HasIndex("TripId");
+
+                    b.ToTable("Places", "app");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.TripEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("LastModified")
+                        .IsRequired()
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("LastModifiedBy")
+                        .HasMaxLength(50)
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Trips", "app");
+                });
+
             modelBuilder.Entity("Domain.Entities.TodoEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -63,7 +316,7 @@ namespace Infrastructure.Data.Migrations
                     b.Property<DateTimeOffset>("Created")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid?>("CreatedBy")
+                    b.Property<Guid>("CreatedBy")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Description")
@@ -72,7 +325,7 @@ namespace Infrastructure.Data.Migrations
                     b.Property<DateTimeOffset?>("LastModified")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid?>("LastModifiedBy")
+                    b.Property<Guid>("LastModifiedBy")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Title")
@@ -280,6 +533,39 @@ namespace Infrastructure.Data.Migrations
                     b.ToTable("AspNetUserTokens", "identity");
                 });
 
+            modelBuilder.Entity("Domain.Entities.FileResourceEntity", b =>
+                {
+                    b.HasOne("Domain.Entities.Planner.ActivityEntity", null)
+                        .WithMany("Files")
+                        .HasForeignKey("ActivityEntityId");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.ActivityEntity", b =>
+                {
+                    b.HasOne("Domain.Entities.Planner.PlaceEntity", null)
+                        .WithMany("Activities")
+                        .HasForeignKey("PlaceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.PlaceEntity", b =>
+                {
+                    b.HasOne("Domain.Entities.Planner.CityEntity", "City")
+                        .WithMany()
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.SetNull)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.Planner.TripEntity", null)
+                        .WithMany("Places")
+                        .HasForeignKey("TripId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("City");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -329,6 +615,21 @@ namespace Infrastructure.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.ActivityEntity", b =>
+                {
+                    b.Navigation("Files");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.PlaceEntity", b =>
+                {
+                    b.Navigation("Activities");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Planner.TripEntity", b =>
+                {
+                    b.Navigation("Places");
                 });
 #pragma warning restore 612, 618
         }

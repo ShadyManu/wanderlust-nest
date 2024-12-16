@@ -1,12 +1,15 @@
 using Application.Commons.Interfaces;
+using Application.Commons.Interfaces.Repositories;
 using Infrastructure.Data;
 using Infrastructure.Data.Interceptors;
+using Infrastructure.Data.Repositories;
 using Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Infrastructure;
 
@@ -41,8 +44,10 @@ public static class InfrastructureDependencyInjection
                 });
         }
         
-        services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
         services.AddScoped<ApplicationDbContextInitializer>();
+        
+        services.TryAddScoped<ITodoRepository, TodoRepository>();
+        services.TryAddScoped<INoteRepository, NoteRepository>();
 
         // Identity provider
         services.AddAuthentication()

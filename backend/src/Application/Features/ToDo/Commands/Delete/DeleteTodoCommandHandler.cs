@@ -1,23 +1,21 @@
 using Application.Commons.Interfaces;
+using Application.Commons.Interfaces.Repositories;
 using Application.Commons.Result;
 
 namespace Application.Features.ToDo.Commands.Delete;
 
 public record DeleteTodoCommand(Guid Id) : ICommand<bool>;
 
-internal sealed class DeleteTodoCommandHandler(IApplicationDbContext context) : ICommandHandler<DeleteTodoCommand, bool>
+internal sealed class DeleteTodoCommandHandler(ITodoRepository repository) : ICommandHandler<DeleteTodoCommand, bool>
 {
     public async Task<Result<bool>> Handle(DeleteTodoCommand command, CancellationToken cancellationToken)
     {
-        var entityToRemove = await context.Todos.FindAsync(command.Id, cancellationToken);
-        if (entityToRemove is null)
+        var isDeleted = await repository.DeleteAsync(command.Id, cancellationToken);
+        if (isDeleted == 0)
         {
-            return Result<bool>.Failure(new ResultError("Not found"));
+            return Result<bool>.Failure(new ResultError("Entity to delete not found"));
         }
         
-        context.Todos.Remove(entityToRemove);
-        var result = await context.SaveChangesAsync(cancellationToken);
-        
-        return Result<bool>.Success(result > 0);
+        return Result<bool>.Success(true);
     }
 }

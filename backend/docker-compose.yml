@@ -9,6 +9,8 @@ services:
       dockerfile: src/Web/Dockerfile
     depends_on:
       - db
+    environment:
+      - Database__DatabaseProvider=PostgreSQL
     ports:
       - "8080:8080"
       - "8081:8081"

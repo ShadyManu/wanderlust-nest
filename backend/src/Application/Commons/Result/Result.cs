@@ -1,9 +1,15 @@
+using System.Text.Json.Serialization;
+
 namespace Application.Commons.Result;
 
 public class Result<TResult>
 {
     public TResult? Data { get; set; }
     public ResultError? Error { get; set; }
+        
+    // This constructor is used just for Application.IntegrationTests
+    [JsonConstructor]
+    private Result() {}
 
     private Result(TResult? data)
     {
