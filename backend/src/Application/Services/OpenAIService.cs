@@ -7,7 +7,7 @@ namespace Application.Services;
 
 public class OpenAIService(HttpClient httpClient) : IAgentAIService
 {
-    private const string ApiKey = "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";
+    private const string ApiKey = "";
 
     public async Task<string> AddToItineraryAsync(string travelResponse)
     {
