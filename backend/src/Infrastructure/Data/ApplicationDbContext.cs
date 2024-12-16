@@ -22,6 +22,8 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     #endregion
     
     public virtual DbSet<FileResourceEntity> FileResources { get; init; }
+    
+    public virtual DbSet<ApiKeyEntity> ApiKeys { get; init; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -12,4 +12,6 @@ public static class TableNames
     public const string Trips = "Trips";
     
     public const string FileResources = "FileResources";
+    
+    public const string ApiKeys = "ApiKeys";
 }

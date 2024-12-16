@@ -1,14 +1,13 @@
 using System.Net.Http.Json;
+using Application.Commons.Interfaces.Repositories;
 using Application.Commons.Interfaces.Services;
 using Application.Dto.AI;
 using Newtonsoft.Json;
 
 namespace Application.Services;
 
-public class OpenAIService(HttpClient httpClient) : IAgentAIService
+public class OpenAIService(HttpClient httpClient, IApiKeyRepository apiKeyRepository) : IAgentAIService
 {
-    private const string ApiKey = "";
-
     public async Task<string> AddToItineraryAsync(string travelResponse)
     {
         var travelResponseCleaned = travelResponse.Replace("\\n", "").Replace("\\\"", "\"");
@@ -22,8 +21,14 @@ public class OpenAIService(HttpClient httpClient) : IAgentAIService
     
     public async Task<string> GetNormalResponseAsync(string userMessage, string? travelDetails)
     {
+        var apiKey = (await apiKeyRepository.GetAllAsync(CancellationToken.None))[0];
+        if (apiKey?.OpenAi is null or "")
+        {
+            return "Could not find an API key";
+        }
+        
         // Impostiamo l'header per l'API Key
-        httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", ApiKey);
+        httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", apiKey.OpenAi);
 
         // TODO
         // if (string.IsNullOrEmpty(travelDetails))

@@ -48,6 +48,7 @@ public static class InfrastructureDependencyInjection
         
         services.TryAddScoped<ITodoRepository, TodoRepository>();
         services.TryAddScoped<INoteRepository, NoteRepository>();
+        services.TryAddScoped<IApiKeyRepository, ApiKeyRepository>();
 
         // Identity provider
         services.AddAuthentication()
